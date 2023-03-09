@@ -1,0 +1,43 @@
+{
+  "siteMetadata": {
+    "language": "en",
+    "siteUrl": "https://samvednawellbeing.org/",
+    "title": "Samvedna Wellbeing",
+    "titleTemplate": "Samvedna Wellbeing | %s",
+    "description": "Samvedna Wellbeing aims to acknowledge, accept and bloom from within towards light. We provide counseling services and promote socio-emotional well-being.",
+    "author": "Bhumika Sheth",
+    "avatar": "../content/images/samvednawellbeinglogo.jpeg",
+    "bio": "Founder - Samvedna Wellbeing. Counseling Psychologist. Meditator. Explorer. Writer.",
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/samvedna-well-being/",
+      "mail": "mailto:samvedna.wellbeing@gmail.com",
+      "instagram": "https://www.instagram.com/samvedna_wellbeing",
+      "twitter": "https://twitter.com/samvednaw",
+      "whatsapp": "https://wa.me/919313905523?text=Hello%20Samvedna%20Wellbeing%2C%0A%0AI%20just%20stumbled%20upon%20your%20website%20and%20would%20like%20to%20connect."
+    }
+  },
+  "siteConfiguration": {
+    "logo": { "text": "Samvedna Wellbeing" },
+    "navigation": {
+      "header": [
+        { "label": "About", "url": "/#about" },
+        { "label": "Blog", "url": "/blog" },
+        { "label": "Contact", "url": "/#contact" }
+      ],
+      "ctaButton": {
+        "openNewTab": true,
+        "label": "Book Session",
+        "url": "https://rzp.io/l/samvedna-wellbeing-60"
+      },
+      "footer": [
+        { "label": "Privacy", "url": "/privacy" },
+        { "label": "Refund", "url": "/refund" }
+      ]
+    },
+    "featureToggles": {
+      "useDarkModeAsDefault": false,
+      "useDarkModeBasedOnUsersPreference": true,
+      "useCookieBar": false
+    }
+  }
+}

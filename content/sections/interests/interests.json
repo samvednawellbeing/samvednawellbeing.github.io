@@ -1,0 +1,57 @@
+{
+  "interests": [
+    {
+      "label": "Individual counseling",
+      "image": {
+        "src": "",
+        "alt": ""
+      }
+    },
+    {
+      "label": "Pre-marital couple counseling",
+      "image": {
+        "src": "",
+        "alt": ""
+      }
+    },
+    {
+      "label": "Couples counseling",
+      "image": {
+        "src": "",
+        "alt": ""
+      }
+    },
+    {
+      "label": "Trauma counseling",
+      "image": {
+        "src": "",
+        "alt": ""
+      }
+    },
+    {
+      "label": "Anxiety counseling",
+      "image": {
+        "src": "",
+        "alt": ""
+      }
+    },
+    {
+      "label": "Depression counseling",
+      "image": {
+        "src": "",
+        "alt": ""
+      }
+    }
+  ],
+  "button": {
+    "visible": false,
+    "label": "+ Load More",
+    "initiallyShownInterests": 10
+  }
+}
+
+
+
+
+
+
