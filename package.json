@@ -8,11 +8,11 @@
   "starter-name": "gatsby-starter-portfolio-minimal-theme",
   "dependencies": {
     "gatsby": "^5.0.1",
+    "gatsby-plugin-google-gtag": "^5.8.0",
     "gatsby-theme-portfolio-minimal": "latest",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
-  "devDependencies": {},
   "keywords": [
     "samvednawellbeing",
     "website",
@@ -21,7 +21,7 @@
     "gatsby-starter-portfolio-minimal-theme"
   ],
   "scripts": {
-    "build": "gatsby build && sh post_build.sh",
+    "build": "gatsby clean && gatsby build && sh post_build.sh",
     "develop": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean"
