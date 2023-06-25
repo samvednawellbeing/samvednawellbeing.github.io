@@ -1,7 +1,7 @@
 {
   "name": "samvedna_wellbeing",
   "private": false,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The source code for https://samvednawellbeing.org/, built on https://github.com/konstantinmuenster/gatsby-starter-portfolio-minimal-theme",
   "author": "Ishan Sheth (@imsheth)",
   "license": "MIT",
