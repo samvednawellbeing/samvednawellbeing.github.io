@@ -1,10 +1,5 @@
 {
-  "intro": "Welcome to,",
   "heroPhoto": {
-    "src": "../../images/samvednawellbeinglogo.jpeg",
-    "alt": "Samvedna Wellbeing Logo"
-  },
-  "image": {
     "src": "../../images/samvednawellbeinglogo.jpeg",
     "alt": "Samvedna Wellbeing Logo"
   },
@@ -14,5 +9,5 @@
     "highlight": "Acknowledge | Accept | Bloom",
     "suffix": ""
   },
-  "description": "Samvedna Wellbeing aims to acknowledge, accept and bloom from within towards light. We provide counseling services and promote socio-emotional well-being."
+  "description": "Transform & Heal: Embrace your journey through holistic mental health therapy."
 }
