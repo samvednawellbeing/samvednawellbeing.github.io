@@ -23,7 +23,7 @@
   ],
   "scripts": {
     "build": "gatsby clean && gatsby build && sh post_build.sh",
-    "develop": "gatsby develop",
+    "develop": "gatsby clean && gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean"
   },

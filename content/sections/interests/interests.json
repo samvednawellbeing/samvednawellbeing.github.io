@@ -29,6 +29,41 @@
       }
     },
     {
+      "label": "PTSD counseling",
+      "image": {
+        "src": "",
+        "alt": ""
+      }
+    },
+    {
+      "label": "Adverse childhood counseling",
+      "image": {
+        "src": "",
+        "alt": ""
+      }
+    },
+    {
+      "label": "Relationship counseling",
+      "image": {
+        "src": "",
+        "alt": ""
+      }
+    },
+    {
+      "label": "Life transitions counseling",
+      "image": {
+        "src": "",
+        "alt": ""
+      }
+    },
+    {
+      "label": "Grief counseling",
+      "image": {
+        "src": "",
+        "alt": ""
+      }
+    },
+    {
       "label": "Anxiety counseling",
       "image": {
         "src": "",
@@ -41,12 +76,61 @@
         "src": "",
         "alt": ""
       }
+    },
+    {
+      "label": "Immigrant counseling",
+      "image": {
+        "src": "",
+        "alt": ""
+      }
+    },
+    {
+      "label": "Anger management counseling",
+      "image": {
+        "src": "",
+        "alt": ""
+      }
+    },
+    {
+      "label": "Identity crisis counseling",
+      "image": {
+        "src": "",
+        "alt": ""
+      }
+    },
+    {
+      "label": "Self-development counseling",
+      "image": {
+        "src": "",
+        "alt": ""
+      }
+    },
+    {
+      "label": "English counseling",
+      "image": {
+        "src": "",
+        "alt": ""
+      }
+    },
+    {
+      "label": "Hindi counseling",
+      "image": {
+        "src": "",
+        "alt": ""
+      }
+    },
+    {
+      "label": "Gujarati counseling",
+      "image": {
+        "src": "",
+        "alt": ""
+      }
     }
   ],
   "button": {
     "visible": false,
     "label": "+ Load More",
-    "initiallyShownInterests": 10
+    "initiallyShownInterests": 100
   }
 }
 

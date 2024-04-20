@@ -31,12 +31,12 @@
       },
       "footer": [
         { "label": "Privacy", "url": "/privacy" },
-        { "label": "Refund", "url": "/refund" }
+        { "label": "Policies", "url": "/policies" }
       ]
     },
     "featureToggles": {
       "useDarkModeAsDefault": false,
-      "useDarkModeBasedOnUsersPreference": true,
+      "useDarkModeBasedOnUsersPreference": false,
       "useCookieBar": false
     }
   }
