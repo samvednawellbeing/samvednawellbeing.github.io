@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunksamvedna_wellbeing=self.webpackChunksamvedna_wellbeing||[]).push([[77],{6209:function(e,n,t){t.r(n),t.d(n,{default:function(){return a}});var l=t(7294),u=t(1485);function a(){return l.createElement(l.Fragment,null,l.createElement(u.pQ,{title:"Refund",useTitleTemplate:!0,noIndex:!0}),l.createElement(u.T3,null,l.createElement(u.Ek,{sectionId:"refund",heading:"Refund"})))}}}]);
-//# sourceMappingURL=component---src-pages-refund-js-ee145f53c5aa247dad6e.js.map
