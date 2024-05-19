@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://samvednawellbeing.org/sitemap-index.xml
-Host: https://samvednawellbeing.org

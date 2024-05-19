@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunksamvedna_wellbeing=self.webpackChunksamvedna_wellbeing||[]).push([[412],{7946:function(e,n,t){t.r(n),t.d(n,{default:function(){return a}});var l=t(7294),i=t(4525);function a(){return l.createElement(l.Fragment,null,l.createElement(i.pQ,{title:"Policies",useTitleTemplate:!0,noIndex:!0}),l.createElement(i.T3,null,l.createElement(i.Ek,{sectionId:"policies",heading:"Policies"})))}}}]);
-//# sourceMappingURL=component---src-pages-policies-js-1a343ff947777ba12e53.js.map
