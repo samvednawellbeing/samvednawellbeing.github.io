@@ -1,0 +1,27 @@
+{
+    "seoTitle": "Blog seo text",
+    "seoDescription": "Blog seo text",
+    "contentTitle1": "Blog content title 1",
+    "contentText1": "Blog content text 1",
+    "contentText2": "Blog content text 2",
+    "contentText3": "Blog content text 3",
+    "posts": [
+        {
+            "title": "Content title 1",
+            "text": "Content text 1",
+            "date": "May 18, 2024",
+            "hrefLink": "/posts/test1"
+        },{
+            "title": "Content title 2",
+            "text": "Content text 2",
+            "date": "May 17, 2024",
+            "hrefLink": "/posts/test1"
+        },{
+            "title": "Content title 3",
+            "text": "Content text 3",
+            "date": "May 16, 2024",
+            "hrefLink": "/web-stories/test"
+        }
+    ]
+}
+  

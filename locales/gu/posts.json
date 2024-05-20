@@ -1,0 +1,12 @@
+{
+    "posts": {
+        "test1": {
+            "seoTitle": "Test1 seo શીર્ષક",
+            "seoDescription": "Test1 seo લખાણ",
+            "contentTitle1": "Test1 સામગ્રી શીર્ષક",
+            "contentText1": "Test1 સામગ્રી લખાણ 1",
+            "contentText2": "Test1 સામગ્રી લખાણ 2",
+            "contentText3": "Test1 સામગ્રી લખાણ 3"
+        }
+    }
+}

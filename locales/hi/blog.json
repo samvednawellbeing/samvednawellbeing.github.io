@@ -1,0 +1,26 @@
+{
+    "seoTitle": "ब्लॉग seo शीर्षक",
+    "seoDescription": "ब्लॉग seo पाठ",
+    "contentTitle1": "ब्लॉग सामग्री शीर्षक",
+    "contentText1": "ब्लॉग सामग्री पाठ 1",
+    "contentText2": "ब्लॉग सामग्री पाठ 2",
+    "contentText3": "ब्लॉग सामग्री पाठ 3",
+    "posts": [
+        {
+            "title": "सामग्री शीर्षक 1",
+            "text": "सामग्री पाठ 1",
+            "date": "May 18, 2024",
+            "hrefLink": "/posts/test1"
+        },{
+            "title": "सामग्री शीर्षक 2",
+            "text": "सामग्री पाठ 2",
+            "date": "May 17, 2024",
+            "hrefLink": "/posts/test1"
+        },{
+            "title": "सामग्री शीर्षक 3",
+            "text": "सामग्री पाठ 3",
+            "date": "May 16, 2024",
+            "hrefLink": "/web-stories/test"
+        }
+    ]
+}

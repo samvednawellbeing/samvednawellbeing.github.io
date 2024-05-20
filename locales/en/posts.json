@@ -1,0 +1,12 @@
+{
+    "posts": {
+        "test1": {
+            "seoTitle": "Test1 seo text",
+            "seoDescription": "Test1 seo text",
+            "contentTitle1": "Test1 content title 1",
+            "contentText1": "Test1 content text 1",
+            "contentText2": "Test1 content text 2",
+            "contentText3": "Test1 content text 3"
+        }
+    }
+}

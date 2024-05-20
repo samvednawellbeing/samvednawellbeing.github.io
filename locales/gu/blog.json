@@ -1,0 +1,26 @@
+{
+    "seoTitle": "બ્લોગ seo શીર્ષક",
+    "seoDescription": "બ્લોગ seo લખાણ",
+    "contentTitle1": "બ્લોગ સામગ્રી શીર્ષક",
+    "contentText1": "બ્લોગ સામગ્રી લખાણ 1",
+    "contentText2": "બ્લોગ સામગ્રી લખાણ 2",
+    "contentText3": "બ્લોગ સામગ્રી લખાણ 3",
+    "posts": [
+        {
+            "title": "સામગ્રી શીર્ષક 1",
+            "text": "સામગ્રી લખાણ 1",
+            "date": "May 18, 2024",
+            "hrefLink": "/posts/test1"
+        },{
+            "title": "સામગ્રી શીર્ષક 2",
+            "text": "સામગ્રી લખાણ 2",
+            "date": "May 17, 2024",
+            "hrefLink": "/posts/test1"
+        },{
+            "title": "સામગ્રી શીર્ષક 3",
+            "text": "સામગ્રી લખાણ 3",
+            "date": "May 16, 2024",
+            "hrefLink": "/web-stories/test"
+        }
+    ]
+}
