@@ -21,7 +21,7 @@ sectionId: policies
   - Refund for 60 minutes therapy session = 2500 - 50.00(2%) = 2450.00 INR
   - Refund for 90 minutes therapy session = 3750 - 75.00(2%) = 3675.00 INR
 - Cancelations within 24 hours of the scheduled appointment time will not be refunded
-- No show in the scheduled appointment time slot will not be refunded
+- No show on the scheduled appointment time slot will not be refunded
 
 #### Following is the privacy policy
 
