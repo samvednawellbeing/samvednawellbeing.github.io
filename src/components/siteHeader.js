@@ -26,8 +26,7 @@ const SiteHeader = (themeMode) => {
     `
   )
 
-  const { languages, originalPath, i18n } = useI18next()
-  // const { languages, originalPath, t, i18n } = useI18next()
+  const { languages, originalPath, t, i18n } = useI18next()
   // const [isDark, setIsDark] = useState(false);
   const [languageValue] = useState(i18n.resolvedLanguage);
   // const [languageValue, setLanguageValue] = useState(i18n.resolvedLanguage);
@@ -42,7 +41,7 @@ const SiteHeader = (themeMode) => {
   });
 
   const location = useLocation();
-  console.log('location.pathname',location.pathname.includes("pricing"));
+  // console.log('location.pathname',location.pathname.includes("pricing"));
 
   // const handleThemeChange = (event) => {
   //   try {
@@ -152,26 +151,35 @@ const SiteHeader = (themeMode) => {
           </Nav>
 
           <Nav>
-            <Link 
-            to="/about/" 
-            className="nav-link" 
-            style={{
+            {t("commonTranslations.siteNavigation.about.isEnabled") && 
+            (<Link to={t("commonTranslations.siteNavigation.about.linkTo")} className="nav-link" style={{
               color:
                 location.pathname.includes("about")
                   ? "#17549A"
                   : "none",
             }}>
-              <Trans i18nKey="commonTranslations.siteNavigation.featuresLinkText"></Trans>
-            </Link>            
-            <Link to="/about/" className="nav-link">
-              <Trans i18nKey="commonTranslations.siteNavigation.aboutLinkText"></Trans>
-            </Link>
-            <Link to="/about/" className="nav-link">
-              <Trans i18nKey="commonTranslations.siteNavigation.pricingLinkText"></Trans>
-            </Link>
-            <Link to="/about/" className="nav-link">
-              <Trans i18nKey="commonTranslations.siteNavigation.contactLinkText"></Trans>
-            </Link>
+              <Trans i18nKey="commonTranslations.siteNavigation.about.linkText"></Trans>
+            </Link>)}
+            {t("commonTranslations.siteNavigation.services.isEnabled") && 
+            (<Link to={t("commonTranslations.siteNavigation.services.linkTo")} className="nav-link">
+              <Trans i18nKey="commonTranslations.siteNavigation.services.linkText"></Trans>
+            </Link>)}
+            {t("commonTranslations.siteNavigation.therapies.isEnabled") && 
+            (<Link to={t("commonTranslations.siteNavigation.therapies.linkTo")} className="nav-link">
+              <Trans i18nKey="commonTranslations.siteNavigation.therapies.linkText"></Trans>
+            </Link>)}
+            {t("commonTranslations.siteNavigation.pricing.isEnabled") && 
+            (<Link to={t("commonTranslations.siteNavigation.pricing.linkTo")} className="nav-link">
+              <Trans i18nKey="commonTranslations.siteNavigation.pricing.linkText"></Trans>
+            </Link>)}
+            {t("commonTranslations.siteNavigation.resources.isEnabled") && 
+            (<Link to={t("commonTranslations.siteNavigation.resources.linkTo")} className="nav-link">
+              <Trans i18nKey="commonTranslations.siteNavigation.resources.linkText"></Trans>
+            </Link>)}
+            {t("commonTranslations.siteNavigation.booking.isEnabled") && 
+            (<Link to={t("commonTranslations.siteNavigation.booking.linkTo")} className="nav-link">
+              <Trans i18nKey="commonTranslations.siteNavigation.booking.linkText"></Trans>
+            </Link>)}
           </Nav>
           <Nav>
             {/* <NavDropdown

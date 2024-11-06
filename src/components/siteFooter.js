@@ -47,23 +47,26 @@ const SiteFooter = () => {
           <Col xs={6} sm={6} md={3} lg={3} xl={3} xxl={3}>
             <Row>
               <Col xs={12} sm={12} md={12} lg={12} xl={12} xxl={12}>
-                <Link to="/about/" style={{ textDecoration: "none", color: "#ffffff" }}>
-                  <Trans i18nKey="commonTranslations.siteNavigation.featuresLinkText"></Trans>
-                </Link>
+                {t("commonTranslations.siteNavigation.therapies.isEnabled") && 
+                (<Link to={t("commonTranslations.siteNavigation.therapies.linkTo")} style={{ textDecoration: "none", color: "#ffffff" }}>
+                  <Trans i18nKey="commonTranslations.siteNavigation.therapies.linkText"></Trans>
+                </Link>)}
               </Col>
               <Col xs={12} sm={12} md={12} lg={12} xl={12} xxl={12}>
-                <Link to="/about/" style={{ textDecoration: "none", color: "#ffffff" }}>
-                  <Trans i18nKey="commonTranslations.siteNavigation.pricingLinkText"></Trans>
-                </Link>
+                {t("commonTranslations.siteNavigation.pricing.isEnabled") && 
+                (<Link to={t("commonTranslations.siteNavigation.pricing.linkTo")} style={{ textDecoration: "none", color: "#ffffff" }}>
+                  <Trans i18nKey="commonTranslations.siteNavigation.pricing.linkText"></Trans>
+                </Link>)}
               </Col>
             </Row>
           </Col>
           <Col xs={6} sm={6} md={3} lg={3} xl={3} xxl={3}>
             <Row>
               <Col xs={12} sm={12} md={12} lg={12} xl={12} xxl={12}>
-                <Link to="/about/" style={{ textDecoration: "none", color: "#ffffff" }}>
-                  <Trans i18nKey="commonTranslations.siteNavigation.aboutLinkText"></Trans>
-                </Link>
+                {t("commonTranslations.siteNavigation.about.isEnabled") && 
+                (<Link to={t("commonTranslations.siteNavigation.about.linkTo")} style={{ textDecoration: "none", color: "#ffffff" }}>
+                  <Trans i18nKey="commonTranslations.siteNavigation.about.linkText"></Trans>
+                </Link>)}
               </Col>              
               <Col xs={12} sm={12} md={12} lg={12} xl={12} xxl={12}>
                 <Link to="/blog/" style={{ textDecoration: "none", color: "#ffffff" }}>

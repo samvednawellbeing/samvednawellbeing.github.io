@@ -2,16 +2,48 @@
   "commonTranslations": {
     "siteHeader": {},
     "siteNavigation": {
-      "featuresLinkText": "ચિકિત્સાઓ",
-      "pricingLinkText": "કિંમત",
-      "aboutLinkText": "વિશે",
+      "features": {
+        "linkTo": "/features/",
+        "linkText": "Features",
+        "isEnabled": false
+      },
+      "pricing": {
+        "linkTo": "/pricing/",
+        "linkText": "કિંમત",
+        "isEnabled": true
+      },
+      "about": {
+        "linkTo": "/about/",
+        "linkText": "વિશે",
+        "isEnabled": true
+      },
       "contactLinkText": "સંપર્ક",
       "testimonialsLinkText": "પ્રશંસાપત્રો",
       "blogLinkText": "બ્લોગ",
       "careersLinkText": "કારકિર્દી",
       "termsLinkText": "શરતો",
       "privacyLinkText": "ગોપનીયતા",
-      "refundLinkText": "રકમ પરત"
+      "refundLinkText": "રકમ પરત",
+      "services": {
+        "linkTo": "/services/",
+        "linkText": "સેવાઓ",
+        "isEnabled": true
+      },
+      "therapies": {
+        "linkTo": "/therapies/",
+        "linkText": "ચિકિત્સાઓ",
+        "isEnabled": true
+      },
+      "resources": {
+        "linkTo": "/resources/",
+        "linkText": "સંસાધનો",
+        "isEnabled": true
+      },
+      "booking": {
+        "linkTo": "/book/",
+        "linkText": "બુક",
+        "isEnabled": true
+      }
     },
     "siteFooter": {
       "marksToInclude": "© ૨૦૨૦",

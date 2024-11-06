@@ -2,16 +2,48 @@
   "commonTranslations": {
     "siteHeader": {},
     "siteNavigation": {
-      "featuresLinkText": "चिकित्साएँ",
-      "pricingLinkText": "कीमत",
-      "aboutLinkText": "बारे में",
+      "features": {
+        "linkTo": "/features/",
+        "linkText": "Features",
+        "isEnabled": false
+      },
+      "pricing": {
+        "linkTo": "/pricing/",
+        "linkText": "कीमत",
+        "isEnabled": true
+      },
+      "about": {
+        "linkTo": "/about/",
+        "linkText": "बारे में",
+        "isEnabled": true
+      },
       "contactLinkText": "संपर्क",
       "testimonialsLinkText": "प्रशंसापत्र",
       "blogLinkText": "ब्लॉग",
       "careersLinkText": "पेशा",
       "termsLinkText": "शर्तें",
       "privacyLinkText": "गोपनीयता",
-      "refundLinkText": "धनवापसी"
+      "refundLinkText": "धनवापसी",
+      "services": {
+        "linkTo": "/services/",
+        "linkText": "सेवाएं",
+        "isEnabled": true
+      },
+      "therapies": {
+        "linkTo": "/therapies/",
+        "linkText": "चिकित्साएँ",
+        "isEnabled": true
+      },
+      "resources": {
+        "linkTo": "/resources/",
+        "linkText": "संसाधन",
+        "isEnabled": true
+      },
+      "booking": {
+        "linkTo": "/book/",
+        "linkText": "बुक",
+        "isEnabled": true
+      }
     },
     "siteFooter": {
       "marksToInclude": "© २०२०",

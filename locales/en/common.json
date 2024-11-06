@@ -2,16 +2,48 @@
   "commonTranslations": {
     "siteHeader": {},
     "siteNavigation": {
-      "featuresLinkText": "Therapies",
-      "pricingLinkText": "Pricing",
-      "aboutLinkText": "About",
+      "features": {
+        "linkTo": "/features/",
+        "linkText": "Features",
+        "isEnabled": false
+      },
+      "pricing": {
+        "linkTo": "/pricing/",
+        "linkText": "Pricing",
+        "isEnabled": true
+      },
+      "about": {
+        "linkTo": "/about/",
+        "linkText": "About",
+        "isEnabled": true
+      },
       "contactLinkText": "Contact",
       "testimonialsLinkText": "Testimonials",
       "blogLinkText": "Blog",
       "careersLinkText": "Careers",
       "termsLinkText": "Terms",
       "privacyLinkText": "Privacy",
-      "refundLinkText": "Refund"
+      "refundLinkText": "Refund",
+      "services": {
+        "linkTo": "/services/",
+        "linkText": "Services",
+        "isEnabled": true
+      },
+      "therapies": {
+        "linkTo": "/therapies/",
+        "linkText": "Therapies",
+        "isEnabled": true
+      },
+      "resources": {
+        "linkTo": "/resources/",
+        "linkText": "Resources",
+        "isEnabled": true
+      },
+      "booking": {
+        "linkTo": "/book/",
+        "linkText": "Book",
+        "isEnabled": true
+      }
     },
     "siteFooter": {
       "marksToInclude": "© 2020",
