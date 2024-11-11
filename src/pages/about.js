@@ -1,5 +1,6 @@
-import React, { useState } from "react"
+import React from "react"
 import { graphql } from "gatsby"
+// import { graphql, navigate } from "gatsby"
 import BaseLayout from "../components/baseLayout"
 import Seo from "../components/seo"
 import useGeoLocation from "react-ipgeolocation"
@@ -34,6 +35,8 @@ const AboutPage = () => {
   )
 }
 
+export default AboutPage
+
 export const Head = ({ data }) => {
   const { languages, originalPath, t, i18n } = useI18next()
   // console.log('i18n.resolvedLanguage about', i18n.resolvedLanguage)
@@ -42,8 +45,11 @@ export const Head = ({ data }) => {
     data.locales.edges.find(e => e.node.ns === "about").node.data
   )
 
-  const location = useGeoLocation()
-  console.log("locationHead", location)
+  const location = useGeoLocation();
+  if (location.country === 'CA') {
+    console.log("locationHead", location);
+    // navigate('/')
+  }
   
   return (
     <Seo
@@ -55,8 +61,6 @@ export const Head = ({ data }) => {
     />
   )
 }
-
-export default AboutPage
 
 export const pageAndCommonData = graphql`
   query ($language: String!) {

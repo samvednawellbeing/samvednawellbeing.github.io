@@ -1,11 +1,11 @@
-import * as React from "react"
+import React from "react"
 import { graphql } from "gatsby"
 // import { graphql, navigate } from "gatsby"
-import BaseLayout from "../../../components/baseLayout"
-import Seo from "../../../components/seo"
+import BaseLayout from "../components/baseLayout"
+import Seo from "../components/seo"
 import useGeoLocation from "react-ipgeolocation"
 
-import "../../../scss/gatsby-imsheth-seed.scss"
+import "../scss/gatsby-imsheth-seed.scss"
 
 import { Link, useI18next } from "gatsby-plugin-react-i18next"
 import { Trans } from "gatsby-plugin-react-i18next"
@@ -14,53 +14,48 @@ import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 
-const Test1Post = ({ data }) => {
+const TherapiesPage = () => {
   // console.log("pageAndCommonData", pageAndCommonData)
   const { languages, originalPath, t, i18n } = useI18next()
-  const postTranslated = JSON.parse(
-    data.locales.edges.find(e => e.node.ns === "posts").node.data
-  ).posts["test1"];
-  // console.log("postTranslated", postTranslated);
   return (
     <BaseLayout>
       <Row>
         <Col xs={12} sm={12} md={12} lg={12} xl={12} xxl={12}>
           <h1>
-            <Trans i18nKey={postTranslated.contentTitle1}></Trans>
+            <Trans i18nKey="contentTitle1"></Trans>
           </h1>
         </Col>
       </Row>
       <Row>
-        <Col sm><Trans i18nKey={postTranslated.contentText1}></Trans></Col>
-        <Col sm><Trans i18nKey={postTranslated.contentText2}></Trans></Col>
-        <Col sm><Trans i18nKey={postTranslated.contentText3}></Trans></Col>
+        <Col sm>{t("contentText1")}</Col>
+        <Col sm>{t("contentText2")}</Col>
+        <Col sm>{t("contentText3")}</Col>
       </Row>
     </BaseLayout>
   )
 }
 
-export default Test1Post
+export default TherapiesPage
 
 export const Head = ({ data }) => {
   const { languages, originalPath, t, i18n } = useI18next()
-  // console.log('i18n.resolvedLanguage posts', i18n.resolvedLanguage)
+  // console.log('i18n.resolvedLanguage therapies', i18n.resolvedLanguage)
   // document.documentElement.lang = i18n.resolvedLanguage
   const pageTranslations = JSON.parse(
-    data.locales.edges.find(e => e.node.ns === "posts").node.data
-  ).posts["test1"]
-  // console.log('head data', data);
+    data.locales.edges.find(e => e.node.ns === "therapies").node.data
+  )
 
   const location = useGeoLocation();
   if (location.country === 'CA') {
     console.log("locationHead", location);
     // navigate('/')
   }
-
+  
   return (
     <Seo
       title={pageTranslations["seoTitle"]}
       description={pageTranslations["seoDescription"]}
-      slug="test1"
+      slug="therapies"
       image="/images/favicon.png"
       isWebStory={false}
     />
@@ -70,7 +65,7 @@ export const Head = ({ data }) => {
 export const pageAndCommonData = graphql`
   query ($language: String!) {
     locales: allLocale(
-      filter: { ns: { in: ["common", "posts"] }, language: { eq: $language } }
+      filter: { ns: { in: ["common", "therapies"] }, language: { eq: $language } }
     ) {
       edges {
         node {

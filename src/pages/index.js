@@ -1,4 +1,4 @@
-import * as React from "react"
+import React from "react"
 import { graphql } from "gatsby"
 // import { graphql, navigate } from "gatsby"
 import BaseLayout from "../components/baseLayout"

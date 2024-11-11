@@ -60,7 +60,7 @@ export default BlogPage
 
 export const Head = ({ data }) => {
   const { languages, originalPath, t, i18n } = useI18next()
-  // console.log('i18n.resolvedLanguage index', i18n.resolvedLanguage)
+  // console.log('i18n.resolvedLanguage blog', i18n.resolvedLanguage)
   // document.documentElement.lang = i18n.resolvedLanguage
   const pageTranslations = JSON.parse(
     data.locales.edges.find(e => e.node.ns === "blog").node.data

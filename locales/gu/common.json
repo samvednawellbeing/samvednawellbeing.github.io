@@ -17,13 +17,41 @@
         "linkText": "વિશે",
         "isEnabled": true
       },
-      "contactLinkText": "સંપર્ક",
-      "testimonialsLinkText": "પ્રશંસાપત્રો",
-      "blogLinkText": "બ્લોગ",
-      "careersLinkText": "કારકિર્દી",
-      "termsLinkText": "શરતો",
-      "privacyLinkText": "ગોપનીયતા",
-      "refundLinkText": "રકમ પરત",
+      "contact": {
+        "linkTo": "/contact/",
+        "linkText": "સંપર્ક",
+        "isEnabled": true
+      },
+      "testimonials": {
+        "linkTo": "/testimonials/",
+        "linkText": "પ્રશંસાપત્રો",
+        "isEnabled": false
+      },
+      "blog": {
+        "linkTo": "/blog/",
+        "linkText": "બ્લોગ",
+        "isEnabled": true
+      },
+      "careers": {
+        "linkTo": "/careers/",
+        "linkText": "કારકિર્દી",
+        "isEnabled": true
+      },
+      "terms": {
+        "linkTo": "/terms/",
+        "linkText": "શરતો",
+        "isEnabled": true
+      },
+      "privacy": {
+        "linkTo": "/privacy/",
+        "linkText": "ગોપનીયતા",
+        "isEnabled": true
+      },
+      "refund": {
+        "linkTo": "/refund/",
+        "linkText": "રકમ પરત",
+        "isEnabled": true
+      },      
       "services": {
         "linkTo": "/services/",
         "linkText": "સેવાઓ",

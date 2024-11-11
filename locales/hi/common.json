@@ -17,13 +17,41 @@
         "linkText": "बारे में",
         "isEnabled": true
       },
-      "contactLinkText": "संपर्क",
-      "testimonialsLinkText": "प्रशंसापत्र",
-      "blogLinkText": "ब्लॉग",
-      "careersLinkText": "पेशा",
-      "termsLinkText": "शर्तें",
-      "privacyLinkText": "गोपनीयता",
-      "refundLinkText": "धनवापसी",
+      "contact": {
+        "linkTo": "/contact/",
+        "linkText": "संपर्क",
+        "isEnabled": true
+      },
+      "testimonials": {
+        "linkTo": "/testimonials/",
+        "linkText": "प्रशंसापत्र",
+        "isEnabled": false
+      },
+      "blog": {
+        "linkTo": "/blog/",
+        "linkText": "ब्लॉग",
+        "isEnabled": true
+      },
+      "careers": {
+        "linkTo": "/careers/",
+        "linkText": "पेशा",
+        "isEnabled": true
+      },
+      "terms": {
+        "linkTo": "/terms/",
+        "linkText": "शर्तें",
+        "isEnabled": true
+      },
+      "privacy": {
+        "linkTo": "/privacy/",
+        "linkText": "गोपनीयता",
+        "isEnabled": true
+      },
+      "refund": {
+        "linkTo": "/refund/",
+        "linkText": "धनवापसी",
+        "isEnabled": true
+      },            
       "services": {
         "linkTo": "/services/",
         "linkText": "सेवाएं",

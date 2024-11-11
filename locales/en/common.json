@@ -17,13 +17,41 @@
         "linkText": "About",
         "isEnabled": true
       },
-      "contactLinkText": "Contact",
-      "testimonialsLinkText": "Testimonials",
-      "blogLinkText": "Blog",
-      "careersLinkText": "Careers",
-      "termsLinkText": "Terms",
-      "privacyLinkText": "Privacy",
-      "refundLinkText": "Refund",
+      "contact": {
+        "linkTo": "/contact/",
+        "linkText": "Contact",
+        "isEnabled": true
+      },
+      "testimonials": {
+        "linkTo": "/testimonials/",
+        "linkText": "Testimonials",
+        "isEnabled": false
+      },
+      "blog": {
+        "linkTo": "/blog/",
+        "linkText": "Blog",
+        "isEnabled": true
+      },
+      "careers": {
+        "linkTo": "/careers/",
+        "linkText": "Careers",
+        "isEnabled": true
+      },
+      "terms": {
+        "linkTo": "/terms/",
+        "linkText": "Terms",
+        "isEnabled": true
+      },
+      "privacy": {
+        "linkTo": "/privacy/",
+        "linkText": "Privacy",
+        "isEnabled": true
+      },
+      "refund": {
+        "linkTo": "/refund/",
+        "linkText": "Refund",
+        "isEnabled": true
+      },
       "services": {
         "linkTo": "/services/",
         "linkText": "Services",
