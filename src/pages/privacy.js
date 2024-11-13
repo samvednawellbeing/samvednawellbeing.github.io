@@ -21,15 +21,29 @@ const PrivacyPage = () => {
     <BaseLayout>
       <Row>
         <Col xs={12} sm={12} md={12} lg={12} xl={12} xxl={12}>
-          <h1>
+          <h1
+            style={{
+              marginTop: "20px",
+              marginBottom: "20px",
+            }}
+          >
             <Trans i18nKey="contentTitle1"></Trans>
           </h1>
         </Col>
       </Row>
       <Row>
-        <Col sm>{t("contentText1")}</Col>
-        <Col sm>{t("contentText2")}</Col>
-        <Col sm>{t("contentText3")}</Col>
+        <Col xs={12} sm={12} md={12} lg={12} xl={12} xxl={12}>
+          <div>
+            <p>{t("contentPrivacy.text1")}</p>
+            <p>{t("contentPrivacy.text2")}</p>
+            <p>{t("contentPrivacy.text3")}</p>
+            <p>{t("contentPrivacy.text4")}</p>
+            <p>{t("contentPrivacy.text5")}</p>
+            <p>{t("contentPrivacy.text6")}</p>
+            <p>{t("contentPrivacy.text7")}</p>
+            <p>{t("contentPrivacy.text8")}</p>
+          </div>
+        </Col>
       </Row>
     </BaseLayout>
   )
@@ -45,12 +59,12 @@ export const Head = ({ data }) => {
     data.locales.edges.find(e => e.node.ns === "privacy").node.data
   )
 
-  const location = useGeoLocation();
-  if (location.country === 'CA') {
-    console.log("locationHead", location);
+  const location = useGeoLocation()
+  if (location.country === "CA") {
+    console.log("locationHead", location)
     // navigate('/')
   }
-  
+
   return (
     <Seo
       title={pageTranslations["seoTitle"]}

@@ -1,7 +1,7 @@
 // import * as React from "react"
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import { useLocation } from '@reach/router';
+import { useLocation } from "@reach/router"
 // import ButtonGroup from 'react-bootstrap/ButtonGroup';
 // import ToggleButton from 'react-bootstrap/ToggleButton';
 
@@ -13,7 +13,7 @@ import { Link, useI18next } from "gatsby-plugin-react-i18next"
 import { Trans } from "gatsby-plugin-react-i18next"
 // import { BrightnessHigh, BrightnessLow } from 'react-bootstrap-icons';
 
-const SiteHeader = (themeMode) => {
+const SiteHeader = themeMode => {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -28,19 +28,19 @@ const SiteHeader = (themeMode) => {
 
   const { languages, originalPath, t, i18n } = useI18next()
   // const [isDark, setIsDark] = useState(false);
-  const [languageValue] = useState(i18n.resolvedLanguage);
+  const [languageValue] = useState(i18n.resolvedLanguage)
   // const [languageValue, setLanguageValue] = useState(i18n.resolvedLanguage);
   const localesToNames = {
-    'en' : 'English',
-    'gu' : 'ગુજરાતી',
-    'hi' : 'हिंदी',
+    en: "English",
+    gu: "ગુજરાતી",
+    hi: "हिंदी",
   }
 
   const languageOptions = languages.map((languageCode, index) => {
-      return {name: localesToNames[languageCode], value: languageCode};
-  });
+    return { name: localesToNames[languageCode], value: languageCode }
+  })
 
-  const location = useLocation();
+  const location = useLocation()
   // console.log('location.pathname',location.pathname.includes("pricing"));
 
   // const handleThemeChange = (event) => {
@@ -78,19 +78,23 @@ const SiteHeader = (themeMode) => {
   //     console.log(err);
   //   }
   // }, [languageValue, isDark]);
-  
+
   useEffect(() => {
     try {
-      document.documentElement.setAttribute('lang', languageValue);
-      console.log('lang read', languageValue);
+      document.documentElement.setAttribute("lang", languageValue)
+      console.log("lang read", languageValue)
     } catch (err) {
-      console.log(err);
+      console.log(err)
     }
-  }, [languageValue]);
+  }, [languageValue])
 
   return (
-    
-    <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
+    <Navbar
+      sticky="top"
+      collapseOnSelect
+      expand="lg"
+      className="bg-body-tertiary"
+    >
       <Container>
         <Navbar.Brand>
           <Link to="/" style={{ textDecoration: "none" }}>
@@ -107,22 +111,18 @@ const SiteHeader = (themeMode) => {
 
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-
             {languageOptions.map((language, index) => (
-                <Link
-                  key={language.value}
-                  to={originalPath}
-                  language={language.value}
-                  className="nav-link"
-                  style={{
-                    color:
-                      languageValue === language.value
-                        ? "#17549A"
-                        : "none",
-                  }}
-                >
-                  {language.name}
-                </Link>
+              <Link
+                key={language.value}
+                to={originalPath}
+                language={language.value}
+                className="nav-link"
+                style={{
+                  color: languageValue === language.value ? "#17549A" : "none",
+                }}
+              >
+                {language.name}
+              </Link>
             ))}
 
             {/* <ButtonGroup>
@@ -147,39 +147,64 @@ const SiteHeader = (themeMode) => {
                 </Link>
               ))}
             </ButtonGroup> */}
-            
           </Nav>
 
           <Nav>
-            {t("commonTranslations.siteNavigation.about.isEnabled") && 
-            (<Link to={t("commonTranslations.siteNavigation.about.linkTo")} className="nav-link" style={{
-              color:
-                location.pathname.includes("about")
-                  ? "#17549A"
-                  : "none",
-            }}>
-              <Trans i18nKey="commonTranslations.siteNavigation.about.linkText"></Trans>
-            </Link>)}
-            {t("commonTranslations.siteNavigation.services.isEnabled") && 
-            (<Link to={t("commonTranslations.siteNavigation.services.linkTo")} className="nav-link">
-              <Trans i18nKey="commonTranslations.siteNavigation.services.linkText"></Trans>
-            </Link>)}
-            {t("commonTranslations.siteNavigation.therapies.isEnabled") && 
-            (<Link to={t("commonTranslations.siteNavigation.therapies.linkTo")} className="nav-link">
-              <Trans i18nKey="commonTranslations.siteNavigation.therapies.linkText"></Trans>
-            </Link>)}
-            {t("commonTranslations.siteNavigation.pricing.isEnabled") && 
-            (<Link to={t("commonTranslations.siteNavigation.pricing.linkTo")} className="nav-link">
-              <Trans i18nKey="commonTranslations.siteNavigation.pricing.linkText"></Trans>
-            </Link>)}
-            {t("commonTranslations.siteNavigation.resources.isEnabled") && 
-            (<Link to={t("commonTranslations.siteNavigation.resources.linkTo")} className="nav-link">
-              <Trans i18nKey="commonTranslations.siteNavigation.resources.linkText"></Trans>
-            </Link>)}
-            {t("commonTranslations.siteNavigation.booking.isEnabled") && 
-            (<Link to={t("commonTranslations.siteNavigation.booking.linkTo")} className="nav-link">
-              <Trans i18nKey="commonTranslations.siteNavigation.booking.linkText"></Trans>
-            </Link>)}
+            {t("commonTranslations.siteNavigation.about.isEnabled") && (
+              <Link
+                to={t("commonTranslations.siteNavigation.about.linkTo")}
+                className="nav-link"
+                style={{
+                  color: location.pathname.includes("about")
+                    ? "#17549A"
+                    : "none",
+                }}
+              >
+                <Trans i18nKey="commonTranslations.siteNavigation.about.linkText"></Trans>
+              </Link>
+            )}
+            {t("commonTranslations.siteNavigation.services.isEnabled") && (
+              <Link
+                to={t("commonTranslations.siteNavigation.services.linkTo")}
+                className="nav-link"
+              >
+                <Trans i18nKey="commonTranslations.siteNavigation.services.linkText"></Trans>
+              </Link>
+            )}
+            {t("commonTranslations.siteNavigation.therapies.isEnabled") && (
+              <Link
+                to={t("commonTranslations.siteNavigation.therapies.linkTo")}
+                className="nav-link"
+              >
+                <Trans i18nKey="commonTranslations.siteNavigation.therapies.linkText"></Trans>
+              </Link>
+            )}
+            {t("commonTranslations.siteNavigation.pricing.isEnabled") && (
+              <Link
+                to={t("commonTranslations.siteNavigation.pricing.linkTo")}
+                className="nav-link"
+              >
+                <Trans i18nKey="commonTranslations.siteNavigation.pricing.linkText"></Trans>
+              </Link>
+            )}
+            {t("commonTranslations.siteNavigation.resources.isEnabled") && (
+              <Link
+                to={t("commonTranslations.siteNavigation.resources.linkTo")}
+                className="nav-link"
+              >
+                <Trans i18nKey="commonTranslations.siteNavigation.resources.linkText"></Trans>
+              </Link>
+            )}
+            {t("commonTranslations.siteNavigation.booking.isEnabled") && (
+              <Link
+                target="_blank"
+                language="en"
+                to={t("commonTranslations.siteNavigation.booking.linkTo")}
+                className="nav-link"
+              >
+                <Trans i18nKey="commonTranslations.siteNavigation.booking.linkText"></Trans>
+              </Link>
+            )}
           </Nav>
           <Nav>
             {/* <NavDropdown
@@ -215,9 +240,6 @@ const SiteHeader = (themeMode) => {
             >
               {isDark === false ? <BrightnessLow color="white" size={24} /> : <BrightnessHigh color="black" size={24} />}
             </ToggleButton> */}
-
-            
-
           </Nav>
         </Navbar.Collapse>
       </Container>

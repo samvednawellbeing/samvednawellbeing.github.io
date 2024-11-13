@@ -68,7 +68,7 @@
         "isEnabled": true
       },
       "booking": {
-        "linkTo": "/book/",
+        "linkTo": "https://calendly.com/samvednawellbeing",
         "linkText": "Book",
         "isEnabled": true
       }

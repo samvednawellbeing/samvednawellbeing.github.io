@@ -15,8 +15,8 @@ import Image from "react-bootstrap/Image"
 const Layout = ({ children }) => {
   return (
     <>
-      <SiteHeader themeMode="light"/>
-      <Container style={{ minHeight: "720px" }}>{children}</Container>
+      <SiteHeader themeMode="light" />
+      <Container style={{ minHeight: "605px" }}>{children}</Container>
       <SiteFooter />
     </>
   )

@@ -49,6 +49,7 @@ const SiteFooter = () => {
         paddingBottom: "15px",
         paddingLeft: "5px",
         textDecoration: "none",
+        marginTop: "50px",
       }}
     >
       <Container>

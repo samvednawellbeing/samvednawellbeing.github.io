@@ -13,6 +13,8 @@ import { Trans } from "gatsby-plugin-react-i18next"
 import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
+import Image from "react-bootstrap/Image"
+import Stack from "react-bootstrap/Stack"
 
 const IndexPage = () => {
   // console.log("pageAndCommonData", pageAndCommonData)
@@ -20,16 +22,82 @@ const IndexPage = () => {
   return (
     <BaseLayout>
       <Row>
-        <Col xs={12} sm={12} md={12} lg={12} xl={12} xxl={12}>
-          <h1>
-            <Trans i18nKey="contentTitle1"></Trans>
-          </h1>
+        <Col
+          xs={12}
+          sm={12}
+          md={6}
+          lg={6}
+          xl={6}
+          xxl={6}
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <Image
+            src="/images/samvedna_wellbeing_logo_mark.svg"
+            style={{
+              height: "auto",
+              width: "20%",
+              marginTop: "50px",
+              marginBottom: "50px",
+            }}
+          />
+        </Col>
+        <Col
+          xs={12}
+          sm={12}
+          md={6}
+          lg={6}
+          xl={6}
+          xxl={6}
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <Stack gap={2} className="my-auto mx-auto">
+            <div>
+              <h1>
+                <Trans i18nKey="contentTitle1"></Trans>
+              </h1>
+            </div>
+            <div>
+              <h5>
+                <Trans i18nKey="contentSubTitle1"></Trans>
+              </h5>
+            </div>
+          </Stack>
         </Col>
       </Row>
       <Row>
-        <Col sm>{t("contentText1")}</Col>
-        <Col sm>{t("contentText2")}</Col>
-        <Col sm>{t("contentText3")}</Col>
+        <Col xs={12} sm={12} md={6} lg={6} xl={6} xxl={6}>
+          <div>
+            <p>{t("contentBrand.text1")}</p>
+            <p>{t("contentBrand.text2")}</p>
+            <p>{t("contentBrand.text3")}</p>
+          </div>
+        </Col>
+        <Col xs={12} sm={12} md={6} lg={6} xl={6} xxl={6}>
+          <div></div>
+        </Col>
+      </Row>
+      <Row>
+        <Col xs={12} sm={12} md={6} lg={6} xl={6} xxl={6}>
+          <div></div>
+        </Col>
+        <Col xs={12} sm={12} md={6} lg={6} xl={6} xxl={6}>
+          <div>
+            <p>{t("contentBrand.text4")}</p>
+          </div>
+        </Col>
+      </Row>
+      <Row>
+        <Col xs={12} sm={12} md={12} lg={12} xl={12} xxl={12}>
+          <hr />
+        </Col>
       </Row>
     </BaseLayout>
   )
@@ -45,9 +113,9 @@ export const Head = ({ data }) => {
     data.locales.edges.find(e => e.node.ns === "index").node.data
   )
 
-  const location = useGeoLocation();
-  if (location.country === 'CA') {
-    console.log("locationHead", location);
+  const location = useGeoLocation()
+  if (location.country === "CA") {
+    console.log("locationHead", location)
     // navigate('/')
   }
 
