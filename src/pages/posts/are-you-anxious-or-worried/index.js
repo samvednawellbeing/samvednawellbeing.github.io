@@ -19,7 +19,7 @@ const Test1Post = ({ data }) => {
   const { languages, originalPath, t, i18n } = useI18next()
   const postTranslated = JSON.parse(
     data.locales.edges.find(e => e.node.ns === "posts").node.data
-  ).posts["test1"]
+  ).posts["are-you-anxious-or-worried"]
   // console.log("postTranslated", postTranslated);
   return (
     <BaseLayout>
@@ -28,17 +28,40 @@ const Test1Post = ({ data }) => {
           <h1>
             <Trans i18nKey={postTranslated.contentTitle1}></Trans>
           </h1>
+          <h6>
+            <Trans i18nKey={postTranslated.date}></Trans>
+          </h6>
         </Col>
       </Row>
       <Row>
-        <Col sm>
-          <Trans i18nKey={postTranslated.contentText1}></Trans>
-        </Col>
-        <Col sm>
-          <Trans i18nKey={postTranslated.contentText2}></Trans>
-        </Col>
-        <Col sm>
-          <Trans i18nKey={postTranslated.contentText3}></Trans>
+        <Col xs={12} sm={12} md={12} lg={12} xl={12} xxl={12}>
+          <p>
+            <Trans i18nKey={postTranslated.contentText.p1}></Trans>
+          </p>
+          <p>
+            <Trans i18nKey={postTranslated.contentText.p2}></Trans>
+          </p>
+          <p>
+            <Trans i18nKey={postTranslated.contentText.p3}></Trans>
+          </p>
+          <p>
+            <Trans i18nKey={postTranslated.contentText.p4}></Trans>
+          </p>
+          <p>
+            <Trans i18nKey={postTranslated.contentText.p5}></Trans>
+          </p>
+          <p>
+            <Trans i18nKey={postTranslated.contentText.p6}></Trans>
+          </p>
+          <p>
+            <Trans i18nKey={postTranslated.contentText.p7}></Trans>
+          </p>
+          <p>
+            <Trans i18nKey={postTranslated.contentText.p8}></Trans>
+          </p>
+          <p>
+            <Trans i18nKey={postTranslated.contentText.p9}></Trans>
+          </p>
         </Col>
       </Row>
     </BaseLayout>
@@ -53,8 +76,8 @@ export const Head = ({ data }) => {
   // document.documentElement.lang = i18n.resolvedLanguage
   const pageTranslations = JSON.parse(
     data.locales.edges.find(e => e.node.ns === "posts").node.data
-  ).posts["test1"]
-  // console.log('head data', data);
+  ).posts["are-you-anxious-or-worried"]
+  console.log("aaow data", pageTranslations)
 
   const location = useGeoLocation()
   if (location.country === "CA") {

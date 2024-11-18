@@ -10,17 +10,20 @@
             "title": "Content title 1",
             "text": "Content text 1",
             "date": "May 18, 2024",
-            "hrefLink": "/posts/test1"
+            "hrefLink": "/posts/test1",
+            "opensInNewTab": false
         },{
-            "title": "Content title 2",
-            "text": "Content text 2",
-            "date": "May 17, 2024",
-            "hrefLink": "/posts/test1"
+            "title": "Are you anxious or worried?",
+            "text": "Why it is essential to know what state you are in",
+            "date": "Nov 06, 2020",
+            "hrefLink": "/posts/are-you-anxious-or-worried",
+            "opensInNewTab": false
         },{
             "title": "Content title 3",
             "text": "Content text 3",
             "date": "May 16, 2024",
-            "hrefLink": "/web-stories/test"
+            "hrefLink": "/web-stories/test",
+            "opensInNewTab": true
         }
     ]
 }

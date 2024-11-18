@@ -74,6 +74,28 @@
       }
     },
     "siteFooter": {
+      "contentServiceList": {
+        "service1": "Individual counseling",
+        "service2": "Pre-marital couple counseling",
+        "service3": "Couples counseling",
+        "service4": "Trauma counseling",
+        "service5": "PTSD counseling",
+        "service6": "Adverse childhood counseling",
+        "service7": "Relationship counseling",
+        "service8": "Life transitions counseling",
+        "service9": "Grief counseling",
+        "service10": "Anxiety counseling",
+        "service11": "Depression counseling",
+        "service12": "Immigrant counseling",
+        "service13": "Anger management counseling",
+        "service14": "Identity crisis counseling",
+        "service15": "Self-development counseling",
+        "service16": "English counseling",
+        "service17": "Hindi counseling",
+        "service18": "Gujarati counseling",
+        "service19": "NRI counseling",
+        "service20": "Student counseling"
+      },
       "marksToInclude": "© 2020",
       "allRightsReserved": "All Rights Reserved.",
       "authorPreTitle": "Made with ❤️ by",

@@ -187,12 +187,12 @@ const SiteHeader = themeMode => {
                 <Trans i18nKey="commonTranslations.siteNavigation.pricing.linkText"></Trans>
               </Link>
             )}
-            {t("commonTranslations.siteNavigation.resources.isEnabled") && (
+            {t("commonTranslations.siteNavigation.blog.isEnabled") && (
               <Link
-                to={t("commonTranslations.siteNavigation.resources.linkTo")}
+                to={t("commonTranslations.siteNavigation.blog.linkTo")}
                 className="nav-link"
               >
-                <Trans i18nKey="commonTranslations.siteNavigation.resources.linkText"></Trans>
+                <Trans i18nKey="commonTranslations.siteNavigation.blog.linkText"></Trans>
               </Link>
             )}
             {t("commonTranslations.siteNavigation.booking.isEnabled") && (

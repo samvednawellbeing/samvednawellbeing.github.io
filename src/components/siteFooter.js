@@ -52,7 +52,143 @@ const SiteFooter = () => {
         marginTop: "50px",
       }}
     >
-      <Container>
+      <Container style={{ textDecoration: "none", color: "#ffffff" }}>
+        <Row>
+          <Col xs={6} sm={6} md={3} lg={3} xl={3} xxl={3}>
+            <Row>
+              <Col xs={12} sm={12} md={12} lg={12} xl={12} xxl={12}>
+                {t("commonTranslations.siteFooter.contentServiceList.service1")}
+              </Col>
+            </Row>
+            <Row>
+              <Col xs={12} sm={12} md={12} lg={12} xl={12} xxl={12}>
+                {t("commonTranslations.siteFooter.contentServiceList.service2")}
+              </Col>
+            </Row>
+            <Row>
+              <Col xs={12} sm={12} md={12} lg={12} xl={12} xxl={12}>
+                {t("commonTranslations.siteFooter.contentServiceList.service3")}
+              </Col>
+            </Row>
+            <Row>
+              <Col xs={12} sm={12} md={12} lg={12} xl={12} xxl={12}>
+                {t("commonTranslations.siteFooter.contentServiceList.service4")}
+              </Col>
+            </Row>
+            <Row>
+              <Col xs={12} sm={12} md={12} lg={12} xl={12} xxl={12}>
+                {t("commonTranslations.siteFooter.contentServiceList.service5")}
+              </Col>
+            </Row>
+          </Col>
+          <Col xs={6} sm={6} md={3} lg={3} xl={3} xxl={3}>
+            <Row>
+              <Col xs={12} sm={12} md={12} lg={12} xl={12} xxl={12}>
+                {t("commonTranslations.siteFooter.contentServiceList.service6")}
+              </Col>
+            </Row>
+            <Row>
+              <Col xs={12} sm={12} md={12} lg={12} xl={12} xxl={12}>
+                {t("commonTranslations.siteFooter.contentServiceList.service7")}
+              </Col>
+            </Row>
+            <Row>
+              <Col xs={12} sm={12} md={12} lg={12} xl={12} xxl={12}>
+                {t("commonTranslations.siteFooter.contentServiceList.service8")}
+              </Col>
+            </Row>
+            <Row>
+              <Col xs={12} sm={12} md={12} lg={12} xl={12} xxl={12}>
+                {t("commonTranslations.siteFooter.contentServiceList.service9")}
+              </Col>
+            </Row>
+            <Row>
+              <Col xs={12} sm={12} md={12} lg={12} xl={12} xxl={12}>
+                {t(
+                  "commonTranslations.siteFooter.contentServiceList.service10"
+                )}
+              </Col>
+            </Row>
+          </Col>
+          <Col xs={6} sm={6} md={3} lg={3} xl={3} xxl={3}>
+            <Row>
+              <Col xs={12} sm={12} md={12} lg={12} xl={12} xxl={12}>
+                {t(
+                  "commonTranslations.siteFooter.contentServiceList.service11"
+                )}
+              </Col>
+            </Row>
+            <Row>
+              <Col xs={12} sm={12} md={12} lg={12} xl={12} xxl={12}>
+                {t(
+                  "commonTranslations.siteFooter.contentServiceList.service12"
+                )}
+              </Col>
+            </Row>
+            <Row>
+              <Col xs={12} sm={12} md={12} lg={12} xl={12} xxl={12}>
+                {t(
+                  "commonTranslations.siteFooter.contentServiceList.service13"
+                )}
+              </Col>
+            </Row>
+            <Row>
+              <Col xs={12} sm={12} md={12} lg={12} xl={12} xxl={12}>
+                {t(
+                  "commonTranslations.siteFooter.contentServiceList.service14"
+                )}
+              </Col>
+            </Row>
+            <Row>
+              <Col xs={12} sm={12} md={12} lg={12} xl={12} xxl={12}>
+                {t(
+                  "commonTranslations.siteFooter.contentServiceList.service15"
+                )}
+              </Col>
+            </Row>
+          </Col>
+          <Col xs={6} sm={6} md={3} lg={3} xl={3} xxl={3}>
+            <Row>
+              <Col xs={12} sm={12} md={12} lg={12} xl={12} xxl={12}>
+                {t(
+                  "commonTranslations.siteFooter.contentServiceList.service16"
+                )}
+              </Col>
+            </Row>
+            <Row>
+              <Col xs={12} sm={12} md={12} lg={12} xl={12} xxl={12}>
+                {t(
+                  "commonTranslations.siteFooter.contentServiceList.service17"
+                )}
+              </Col>
+            </Row>
+            <Row>
+              <Col xs={12} sm={12} md={12} lg={12} xl={12} xxl={12}>
+                {t(
+                  "commonTranslations.siteFooter.contentServiceList.service18"
+                )}
+              </Col>
+            </Row>
+            <Row>
+              <Col xs={12} sm={12} md={12} lg={12} xl={12} xxl={12}>
+                {t(
+                  "commonTranslations.siteFooter.contentServiceList.service19"
+                )}
+              </Col>
+            </Row>
+            <Row>
+              <Col xs={12} sm={12} md={12} lg={12} xl={12} xxl={12}>
+                {t(
+                  "commonTranslations.siteFooter.contentServiceList.service20"
+                )}
+              </Col>
+            </Row>
+          </Col>
+        </Row>
+      </Container>
+      <Container
+        style={{ textDecoration: "none", color: "#ffffff", marginTop: "50px" }}
+      >
         <Row>
           <Col xs={6} sm={6} md={3} lg={3} xl={3} xxl={3}>
             <Row>

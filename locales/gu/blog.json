@@ -10,17 +10,20 @@
             "title": "સામગ્રી શીર્ષક 1",
             "text": "સામગ્રી લખાણ 1",
             "date": "May 18, 2024",
-            "hrefLink": "/posts/test1"
+            "hrefLink": "/posts/test1",
+            "opensInNewTab": false
         },{
-            "title": "સામગ્રી શીર્ષક 2",
-            "text": "સામગ્રી લખાણ 2",
-            "date": "May 17, 2024",
-            "hrefLink": "/posts/test1"
+            "title": "શું તમે ચિંતિત છો કે ચિંતિત છો?",
+            "text": "તમે કઈ સ્થિતિમાં છો તે જાણવું શા માટે જરૂરી છે",
+            "date": "Nov 06, 2020",
+            "hrefLink": "/posts/are-you-anxious-or-worried",
+            "opensInNewTab": false
         },{
             "title": "સામગ્રી શીર્ષક 3",
             "text": "સામગ્રી લખાણ 3",
             "date": "May 16, 2024",
-            "hrefLink": "/web-stories/test"
+            "hrefLink": "/web-stories/test",
+            "opensInNewTab": true
         }
     ]
 }

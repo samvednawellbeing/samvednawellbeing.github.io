@@ -1,5 +1,5 @@
 import * as React from "react"
-import { graphql } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 // import { graphql, navigate } from "gatsby"
 import BaseLayout from "../components/baseLayout"
 import Seo from "../components/seo"
@@ -9,21 +9,22 @@ import "../scss/gatsby-imsheth-seed.scss"
 
 import { Link, useI18next } from "gatsby-plugin-react-i18next"
 import { Trans } from "gatsby-plugin-react-i18next"
+import urljoin from "url-join"
 
 import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
-import Image from 'react-bootstrap/Image'
-import Button from 'react-bootstrap/Button'
-import Card from 'react-bootstrap/Card'
-import Placeholder from 'react-bootstrap/Placeholder'
+import Image from "react-bootstrap/Image"
+import Button from "react-bootstrap/Button"
+import Card from "react-bootstrap/Card"
+import Placeholder from "react-bootstrap/Placeholder"
 
 const BlogPage = ({ data }) => {
   // console.log("pageAndCommonData", pageAndCommonData)
   const { languages, originalPath, t, i18n } = useI18next()
   const postsTranslated = JSON.parse(
     data.locales.edges.find(e => e.node.ns === "blog").node.data
-  ).posts;
+  ).posts
   return (
     <BaseLayout>
       <Row>
@@ -31,21 +32,32 @@ const BlogPage = ({ data }) => {
           <h1>
             <Trans i18nKey="contentTitle1"></Trans>
           </h1>
-          
-            <h2></h2>
-          
+
+          <h2></h2>
         </Col>
       </Row>
       <Row>
         {postsTranslated.map((post, index) => (
           <Col key={index} xs={6} sm={6} md={4} lg={4} xl={3} xxl={3}>
-            <Link key={index} to={post.hrefLink} style={{ textDecoration: "none" }}>
-              <Card key={index} style={{ width: '18rem', marginBottom: '2rem' }}>
+            <Link
+              // target="_blank"
+              // language="en"
+              // to={urljoin(data.site.siteMetadata.siteUrl, post.hrefLink)}
+              to={post.hrefLink}
+              key={index}
+              style={{ textDecoration: "none" }}
+            >
+              <Card
+                key={index}
+                style={{ width: "18rem", marginBottom: "2rem" }}
+              >
                 <Card.Img variant="top" src="/images/mt.jpg" />
                 <Card.Body>
                   <Card.Title>{post.title}</Card.Title>
                   <Card.Text>{post.text}</Card.Text>
-                  <Card.Subtitle><i>{post.date}</i></Card.Subtitle>
+                  <Card.Subtitle>
+                    <i>{post.date}</i>
+                  </Card.Subtitle>
                 </Card.Body>
               </Card>
             </Link>
@@ -66,9 +78,9 @@ export const Head = ({ data }) => {
     data.locales.edges.find(e => e.node.ns === "blog").node.data
   )
 
-  const location = useGeoLocation();
-  if (location.country === 'CA') {
-    console.log("locationHead", location);
+  const location = useGeoLocation()
+  if (location.country === "CA") {
+    console.log("locationHead", location)
     // navigate('/')
   }
 
@@ -94,6 +106,14 @@ export const pageAndCommonData = graphql`
           data
           language
         }
+      }
+    }
+    site {
+      siteMetadata {
+        title
+        description
+        siteUrl
+        twitter
       }
     }
   }

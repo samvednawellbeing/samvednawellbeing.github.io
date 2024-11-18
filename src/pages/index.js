@@ -78,25 +78,63 @@ const IndexPage = () => {
             <p>{t("contentBrand.text1")}</p>
             <p>{t("contentBrand.text2")}</p>
             <p>{t("contentBrand.text3")}</p>
-          </div>
-        </Col>
-        <Col xs={12} sm={12} md={6} lg={6} xl={6} xxl={6}>
-          <div></div>
-        </Col>
-      </Row>
-      <Row>
-        <Col xs={12} sm={12} md={6} lg={6} xl={6} xxl={6}>
-          <div></div>
-        </Col>
-        <Col xs={12} sm={12} md={6} lg={6} xl={6} xxl={6}>
-          <div>
             <p>{t("contentBrand.text4")}</p>
           </div>
         </Col>
+        <Col
+          xs={12}
+          sm={12}
+          md={6}
+          lg={6}
+          xl={6}
+          xxl={6}
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <Image
+            rounded
+            src="/images/therapy_center.jpg"
+            style={{
+              height: "auto",
+              width: "40%",
+              marginTop: "50px",
+              marginBottom: "50px",
+            }}
+          />
+        </Col>
       </Row>
       <Row>
-        <Col xs={12} sm={12} md={12} lg={12} xl={12} xxl={12}>
-          <hr />
+        <Col
+          xs={12}
+          sm={12}
+          md={6}
+          lg={6}
+          xl={6}
+          xxl={6}
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <Image
+            rounded
+            src="/images/samvedna_wellbeing_founder_therapist_bhumika_sheth.jpg"
+            style={{
+              height: "auto",
+              width: "50%",
+              marginTop: "50px",
+              marginBottom: "50px",
+            }}
+          />
+        </Col>
+        <Col xs={12} sm={12} md={6} lg={6} xl={6} xxl={6}>
+          <div>
+            <p>{t("contentFounder.text1")}</p>
+          </div>
         </Col>
       </Row>
     </BaseLayout>
