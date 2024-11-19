@@ -37,9 +37,9 @@
         "linkText": "કારકિર્દી",
         "isEnabled": true
       },
-      "terms": {
-        "linkTo": "/terms/",
-        "linkText": "શરતો",
+      "policies": {
+        "linkTo": "/policies/",
+        "linkText": "નીતિઓ",
         "isEnabled": true
       },
       "privacy": {
@@ -50,7 +50,7 @@
       "refund": {
         "linkTo": "/refund/",
         "linkText": "રકમ પરત",
-        "isEnabled": true
+        "isEnabled": false
       },
       "services": {
         "linkTo": "/services/",
@@ -74,6 +74,12 @@
       }
     },
     "siteFooter": {
+      "contentNewsLetter": {
+        "isEnabled": true,
+        "text1": "અમારા ન્યૂઝલેટરમાં જોડાઓ",
+        "text2": "તમારી સુખાકારીની મુસાફરીને ટેકો આપવા માટે તમે ઉપયોગ કરી શકો છો તે સૌથી ઉપયોગી યુક્તિઓ",
+        "text3": "સબ્સ્ક્રાઇબ કરો"
+      },
       "contentServiceList": {
         "service1": "વ્યક્તિગત કોઉન્સેલિંગ",
         "service2": "લગ્ન પહેલા દંપતી કોઉન્સેલિંગ",

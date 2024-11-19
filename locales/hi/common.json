@@ -37,9 +37,9 @@
         "linkText": "पेशा",
         "isEnabled": true
       },
-      "terms": {
-        "linkTo": "/terms/",
-        "linkText": "शर्तें",
+      "policies": {
+        "linkTo": "/policies/",
+        "linkText": "नीतियाँ",
         "isEnabled": true
       },
       "privacy": {
@@ -50,7 +50,7 @@
       "refund": {
         "linkTo": "/refund/",
         "linkText": "धनवापसी",
-        "isEnabled": true
+        "isEnabled": false
       },
       "services": {
         "linkTo": "/services/",
@@ -74,6 +74,12 @@
       }
     },
     "siteFooter": {
+      "contentNewsLetter": {
+        "isEnabled": true,
+        "text1": "हमारे समाचार पत्र शामिल हों",
+        "text2": "यह सबसे उपयोगी रणनीति है जिसका उपयोग आप अपनी भलाई यात्रा में सहायता के लिए कर सकते हैं",
+        "text3": "सदस्यता लें"
+      },
       "contentServiceList": {
         "service1": "व्यक्तिगत काउन्सलिंग",
         "service2": "विवाह पूर्व युगल काउन्सलिंग",

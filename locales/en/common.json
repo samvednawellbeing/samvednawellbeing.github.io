@@ -37,9 +37,9 @@
         "linkText": "Careers",
         "isEnabled": true
       },
-      "terms": {
-        "linkTo": "/terms/",
-        "linkText": "Terms",
+      "policies": {
+        "linkTo": "/policies/",
+        "linkText": "Policies",
         "isEnabled": true
       },
       "privacy": {
@@ -50,7 +50,7 @@
       "refund": {
         "linkTo": "/refund/",
         "linkText": "Refund",
-        "isEnabled": true
+        "isEnabled": false
       },
       "services": {
         "linkTo": "/services/",
@@ -74,6 +74,12 @@
       }
     },
     "siteFooter": {
+      "contentNewsLetter": {
+        "isEnabled": true,
+        "text1": "Join our newsletter",
+        "text2": "Just the most useful tactics you can use to support your wellbeing journey",
+        "text3": "Subscribe"
+      },
       "contentServiceList": {
         "service1": "Individual counseling",
         "service2": "Pre-marital couple counseling",

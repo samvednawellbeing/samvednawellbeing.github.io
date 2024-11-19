@@ -4,5 +4,18 @@
   "contentTitle1": "Pricing content title 1",
   "contentText1": "Pricing content text 1",
   "contentText2": "Pricing content text 2",
-  "contentText3": "Pricing content text 3"
+  "contentText3": "Pricing content text 3",
+  "text3": "Pricing policy",
+  "text4": "40 minutes therapy session = 1700 INR",
+  "text5": "60 minutes therapy session = 2500 INR",
+  "text6": "90 minutes therapy session = 3750 INR",
+  "text7": "Slots can be booked via the booking link and then subsequently the payment can be made following booking the slot",
+  "text8": "Refund policy",
+  "text9": "Cancelations can be rescheduled or refunded",
+  "text10": "Cancelations before 24 hours of the scheduled appointment time will be refunded with 2% deduction of processing fee within 7 working days",
+  "text11": "Refund for 40 minutes therapy session = 1700 - 34.00(2%) = 1666.00 INR",
+  "text12": "Refund for 60 minutes therapy session = 2500 - 50.00(2%) = 2450.00 INR",
+  "text13": "Refund for 90 minutes therapy session = 3750 - 75.00(2%) = 3675.00 INR",
+  "text14": "Cancelations within 24 hours of the scheduled appointment time will not be refunded",
+  "text15": "No show on the scheduled appointment time slot will not be refunded"
 }

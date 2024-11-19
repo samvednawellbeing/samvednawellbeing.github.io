@@ -1,0 +1,21 @@
+{
+  "seoTitle": "Policies",
+  "seoDescription": "Transform & Heal: Embrace your journey through holistic mental health therapy.",
+  "contentTitle1": "Policies",
+  "contentPolicies": {
+    "usagePolicy": {
+      "text1": "Usage policy",
+      "text2": "Terms of service and conditions",
+      "text3": "The terms of service and conditions contained here in shall apply to any person (“User”) using the services of “Samvedna Wellbeing” for making payments (“Therapy Session Booking”) through an online payment gateway service (“Service”) offered by “RazorPay”. Each “User” is therefore deemed to have read and accepted these above mentioned terms of services and conditions.",
+      "text4": "Continued usage of the services of “Samvedna Wellbeing”, implies acceptance and agreement to above “Terms of service and conditions”"
+    },
+    "pricingPolicy": {
+      "text1": "Pricing and refund policy",
+      "text2": "The pricing and refund policy can be accessed at - "
+    },
+    "privacyPolicy": {
+      "text1": "Privacy policy",
+      "text2": "The privacy policy can be accessed at - "
+    }
+  }
+}
