@@ -1,7 +1,12 @@
 {
-  "seoTitle": "Careers seo title",
-  "seoDescription": "Careers seo text",
-  "contentTitle1": "Careers content title 1",
+  "seo": {
+    "title": "Careers",
+    "description": "Transform & Heal: Embrace your journey through holistic mental health therapy.",
+    "slug": "careers",
+    "image": "/images/favicon.png",
+    "isWebStory": false
+  },
+  "contentTitle1": "Careers",
   "contentText1": "Careers content text 1",
   "contentText2": "Careers content text 2",
   "contentText3": "Careers content text 3"

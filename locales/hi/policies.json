@@ -1,6 +1,11 @@
 {
-  "seoTitle": "नीतियाँ",
-  "seoDescription": "परिवर्तन और उपचार: समग्र मानसिक स्वास्थ्य चिकित्सा के माध्यम से अपनी यात्रा को अपनाएं।",
+  "seo": {
+    "title": "नीतियाँ",
+    "description": "परिवर्तन और उपचार: समग्र मानसिक स्वास्थ्य चिकित्सा के माध्यम से अपनी यात्रा को अपनाएं।",
+    "slug": "policies",
+    "image": "/images/favicon.png",
+    "isWebStory": false
+  },
   "contentTitle1": "नीतियाँ",
   "contentPolicies": {
     "usagePolicy": {

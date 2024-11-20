@@ -26,9 +26,11 @@ const NotFoundPage = () => {
         </Col>
       </Row>
       <Row>
-        <Col sm>{t("contentText1")}</Col>
-        <Col sm>{t("contentText2")}</Col>
-        <Col sm>{t("contentText3")}</Col>
+        <Col xs={12} sm={12} md={12} lg={12} xl={12} xxl={12}>
+          <div>
+            <p>{t("contentText1")}</p>
+          </div>
+        </Col>
       </Row>
     </BaseLayout>
   )
@@ -37,7 +39,7 @@ const NotFoundPage = () => {
 export default NotFoundPage
 
 export const Head = ({ data }) => {
-  const { languages, originalPath, t, i18n } = useI18next()
+  // const { languages, originalPath, t, i18n } = useI18next()
   // console.log('i18n.resolvedLanguage about', i18n.resolvedLanguage)
   // document.documentElement.lang = i18n.resolvedLanguage
   const pageTranslations = JSON.parse(
@@ -45,15 +47,18 @@ export const Head = ({ data }) => {
   )
 
   const location = useGeoLocation()
-  console.log("locationHead", location)
+  if (location.country === "CA") {
+    console.log("locationHead", location)
+    // navigate('/')
+  }
 
   return (
     <Seo
-      title={pageTranslations["seoTitle"]}
-      description={pageTranslations["seoDescription"]}
-      slug="404"
-      image="/images/favicon.png"
-      isWebStory={false}
+      title={pageTranslations.seo.title}
+      description={pageTranslations.seo.description}
+      slug={pageTranslations.seo.slug}
+      image={pageTranslations.seo.image}
+      isWebStory={pageTranslations.seo.isWebStory}
     />
   )
 }

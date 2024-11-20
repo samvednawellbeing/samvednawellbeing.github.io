@@ -1,9 +1,11 @@
 {
-	"seoTitle": "Doesn't exist",
-	"seoDescription": "Doesn't exist",
-	"contentTitle1": "Doesn't exist",
-	"contentText1": "What you are looking for, doesn't exist",
-	"contentText2": "What you are looking for, doesn't exist",
-	"contentText3": "What you are looking for, doesn't exist"
+  "seo": {
+    "title": "Doesn't exist",
+    "description": "Transform & Heal: Embrace your journey through holistic mental health therapy.",
+    "slug": "404",
+    "image": "/images/favicon.png",
+    "isWebStory": false
+  },
+  "contentTitle1": "Doesn't exist",
+  "contentText1": "What you are looking for, doesn't exist"
 }
-  

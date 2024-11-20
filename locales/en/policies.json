@@ -1,6 +1,11 @@
 {
-  "seoTitle": "Policies",
-  "seoDescription": "Transform & Heal: Embrace your journey through holistic mental health therapy.",
+  "seo": {
+    "title": "Policies",
+    "description": "Transform & Heal: Embrace your journey through holistic mental health therapy.",
+    "slug": "policies",
+    "image": "/images/favicon.png",
+    "isWebStory": false
+  },
   "contentTitle1": "Policies",
   "contentPolicies": {
     "usagePolicy": {

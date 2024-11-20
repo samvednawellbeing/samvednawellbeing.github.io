@@ -1,6 +1,11 @@
 {
-  "seoTitle": "Privacy",
-  "seoDescription": "Transform & Heal: Embrace your journey through holistic mental health therapy.",
+  "seo": {
+    "title": "Privacy",
+    "description": "Transform & Heal: Embrace your journey through holistic mental health therapy.",
+    "slug": "privacy",
+    "image": "/images/favicon.png",
+    "isWebStory": false
+  },
   "contentTitle1": "Privacy",
   "contentPrivacy": {
     "text1": "Your privacy is important to me. It is my, policy to respect your privacy regarding any information I may collect from you across my website, https://samvednawellbeing.org.",

@@ -38,26 +38,26 @@ const CareersPage = () => {
 export default CareersPage
 
 export const Head = ({ data }) => {
-  const { languages, originalPath, t, i18n } = useI18next()
+  // const { languages, originalPath, t, i18n } = useI18next()
   // console.log('i18n.resolvedLanguage careers', i18n.resolvedLanguage)
   // document.documentElement.lang = i18n.resolvedLanguage
   const pageTranslations = JSON.parse(
     data.locales.edges.find(e => e.node.ns === "careers").node.data
   )
 
-  const location = useGeoLocation();
-  if (location.country === 'CA') {
-    console.log("locationHead", location);
+  const location = useGeoLocation()
+  if (location.country === "CA") {
+    console.log("locationHead", location)
     // navigate('/')
   }
-  
+
   return (
     <Seo
-      title={pageTranslations["seoTitle"]}
-      description={pageTranslations["seoDescription"]}
-      slug="careers"
-      image="/images/favicon.png"
-      isWebStory={false}
+      title={pageTranslations.seo.title}
+      description={pageTranslations.seo.description}
+      slug={pageTranslations.seo.slug}
+      image={pageTranslations.seo.image}
+      isWebStory={pageTranslations.seo.isWebStory}
     />
   )
 }
