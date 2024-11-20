@@ -15,7 +15,6 @@ import { Link, useI18next } from "gatsby-plugin-react-i18next"
 import { Trans } from "gatsby-plugin-react-i18next"
 
 function Seo({ description, title, slug, image, isWebStory, children }) {
-  // console.log("seo props", { description, title, slug, image, isWebStory, children })
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -48,24 +47,23 @@ function Seo({ description, title, slug, image, isWebStory, children }) {
   // console.log("seo pageMeta", pageMeta)
   const schemaOrgJSONLD = [
     {
-      '@context': 'http://schema.org',
-      '@type': 'WebSite',
+      "@context": "http://schema.org",
+      "@type": "WebSite",
       url: pageMeta.pageUrl,
       name: pageMeta.title,
       alternateName: pageMeta.title,
     },
-  ];
+  ]
 
   const { languages, originalPath, t, i18n } = useI18next()
 
   return (
     <>
-      { 
-        isWebStory === false ? 
-          <html data-bs-theme="light" />
-          :
-          <html data-bs-theme="dark" />
-      }
+      {isWebStory === false ? (
+        <html data-bs-theme="light" />
+      ) : (
+        <html data-bs-theme="dark" />
+      )}
 
       <meta charSet="utf-8" />
 
@@ -107,18 +105,29 @@ function Seo({ description, title, slug, image, isWebStory, children }) {
       <meta name="twitter:image:width" content="1200" />
       <meta name="twitter:image:height" content="630" /> */}
 
-      { 
-        isWebStory === true ? 
-          <>
-          <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1" />
+      {isWebStory === true ? (
+        <>
+          <meta
+            name="viewport"
+            content="width=device-width,minimum-scale=1,initial-scale=1"
+          />
           <script async src="https://cdn.ampproject.org/v0.js"></script>
-          <script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
-          <script async custom-element="amp-story" src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
-          <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400" rel="stylesheet" />
-          </>
-          :
-          null
-      }
+          <script
+            async
+            custom-element="amp-video"
+            src="https://cdn.ampproject.org/v0/amp-video-0.1.js"
+          ></script>
+          <script
+            async
+            custom-element="amp-story"
+            src="https://cdn.ampproject.org/v0/amp-story-1.0.js"
+          ></script>
+          <link
+            href="https://fonts.googleapis.com/css?family=Oswald:200,300,400"
+            rel="stylesheet"
+          />
+        </>
+      ) : null}
 
       <script type="application/ld+json">
         {JSON.stringify(schemaOrgJSONLD)}

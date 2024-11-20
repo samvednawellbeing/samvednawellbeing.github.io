@@ -1,6 +1,11 @@
 {
-  "seoTitle": "सेवाएं seo शीर्षक",
-  "seoDescription": "सेवाएं seo पाठ",
+  "seo": {
+    "title": "सेवाएं",
+    "description": "परिवर्तन और उपचार: समग्र मानसिक स्वास्थ्य चिकित्सा के माध्यम से अपनी यात्रा को अपनाएं।",
+    "slug": "services",
+    "image": "/images/favicon.png",
+    "isWebStory": false
+  },
   "contentTitle1": "सेवाएं सामग्री शीर्षक",
   "contentText1": "सेवाएं सामग्री पाठ 1",
   "contentText2": "सेवाएं सामग्री पाठ 2",

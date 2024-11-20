@@ -1,6 +1,11 @@
 {
-  "seoTitle": "Services seo title",
-  "seoDescription": "Services seo text",
+  "seo": {
+    "title": "Services",
+    "description": "Transform & Heal: Embrace your journey through holistic mental health therapy.",
+    "slug": "services",
+    "image": "/images/favicon.png",
+    "isWebStory": false
+  },
   "contentTitle1": "Services content title 1",
   "contentText1": "Services content text 1",
   "contentText2": "Services content text 2",

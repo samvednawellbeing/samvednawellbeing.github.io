@@ -65,7 +65,7 @@
       "resources": {
         "linkTo": "/resources/",
         "linkText": "Resources",
-        "isEnabled": true
+        "isEnabled": false
       },
       "booking": {
         "linkTo": "https://calendly.com/samvednawellbeing",

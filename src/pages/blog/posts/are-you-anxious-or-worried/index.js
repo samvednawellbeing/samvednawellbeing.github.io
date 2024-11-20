@@ -1,11 +1,11 @@
 import * as React from "react"
 import { graphql } from "gatsby"
 // import { graphql, navigate } from "gatsby"
-import BaseLayout from "../../../components/baseLayout"
-import Seo from "../../../components/seo"
+import BaseLayout from "../../../../components/baseLayout"
+import Seo from "../../../../components/seo"
 import useGeoLocation from "react-ipgeolocation"
 
-import "../../../scss/gatsby-imsheth-seed.scss"
+import "../../../../scss/gatsby-imsheth-seed.scss"
 
 import { Link, useI18next } from "gatsby-plugin-react-i18next"
 import { Trans } from "gatsby-plugin-react-i18next"
@@ -14,13 +14,13 @@ import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 
-const Test1Post = ({ data }) => {
+const BlogPost = ({ data }) => {
   // console.log("pageAndCommonData", pageAndCommonData)
   const { languages, originalPath, t, i18n } = useI18next()
   const postTranslated = JSON.parse(
     data.locales.edges.find(e => e.node.ns === "posts").node.data
   ).posts["are-you-anxious-or-worried"]
-  // console.log("postTranslated", postTranslated);
+
   return (
     <BaseLayout>
       <Row>
@@ -68,16 +68,15 @@ const Test1Post = ({ data }) => {
   )
 }
 
-export default Test1Post
+export default BlogPost
 
 export const Head = ({ data }) => {
-  const { languages, originalPath, t, i18n } = useI18next()
+  // const { languages, originalPath, t, i18n } = useI18next()
   // console.log('i18n.resolvedLanguage posts', i18n.resolvedLanguage)
   // document.documentElement.lang = i18n.resolvedLanguage
   const pageTranslations = JSON.parse(
     data.locales.edges.find(e => e.node.ns === "posts").node.data
   ).posts["are-you-anxious-or-worried"]
-  console.log("aaow data", pageTranslations)
 
   const location = useGeoLocation()
   if (location.country === "CA") {
@@ -87,11 +86,11 @@ export const Head = ({ data }) => {
 
   return (
     <Seo
-      title={pageTranslations["seoTitle"]}
-      description={pageTranslations["seoDescription"]}
-      slug="test1"
-      image="/images/favicon.png"
-      isWebStory={false}
+      title={pageTranslations.seo.title}
+      description={pageTranslations.seo.description}
+      slug={pageTranslations.seo.slug}
+      image={pageTranslations.seo.image}
+      isWebStory={pageTranslations.seo.isWebStory}
     />
   )
 }

@@ -1,6 +1,11 @@
 {
-  "seoTitle": "चिकित्साएँ seo शीर्षक",
-  "seoDescription": "चिकित्साएँ seo पाठ",
+  "seo": {
+    "title": "चिकित्साएँ",
+    "description": "परिवर्तन और उपचार: समग्र मानसिक स्वास्थ्य चिकित्सा के माध्यम से अपनी यात्रा को अपनाएं।",
+    "slug": "therapies",
+    "image": "/images/favicon.png",
+    "isWebStory": false
+  },
   "contentTitle1": "चिकित्साएँ सामग्री शीर्षक",
   "contentText1": "चिकित्साएँ सामग्री पाठ 1",
   "contentText2": "चिकित्साएँ सामग्री पाठ 2",

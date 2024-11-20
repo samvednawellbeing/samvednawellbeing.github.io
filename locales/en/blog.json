@@ -1,30 +1,33 @@
 {
-    "seoTitle": "Blog seo text",
-    "seoDescription": "Blog seo text",
-    "contentTitle1": "Blog content title 1",
-    "contentText1": "Blog content text 1",
-    "contentText2": "Blog content text 2",
-    "contentText3": "Blog content text 3",
-    "posts": [
-        {
-            "title": "Content title 1",
-            "text": "Content text 1",
-            "date": "May 18, 2024",
-            "hrefLink": "/posts/test1",
-            "opensInNewTab": false
-        },{
-            "title": "Are you anxious or worried?",
-            "text": "Why it is essential to know what state you are in",
-            "date": "Nov 06, 2020",
-            "hrefLink": "/posts/are-you-anxious-or-worried",
-            "opensInNewTab": false
-        },{
-            "title": "Content title 3",
-            "text": "Content text 3",
-            "date": "May 16, 2024",
-            "hrefLink": "/web-stories/test",
-            "opensInNewTab": true
-        }
-    ]
+  "seo": {
+    "title": "Blog",
+    "description": "Transform & Heal: Embrace your journey through holistic mental health therapy.",
+    "slug": "blog",
+    "image": "/images/favicon.png",
+    "isWebStory": false
+  },
+  "contentTitle1": "Blog",
+  "posts": [
+    {
+      "title": "Making Space",
+      "text": "Making space helps you detach from your worries",
+      "date": "November 06, 2020",
+      "hrefLink": "/blog/posts/making-space",
+      "opensInNewTab": false
+    },
+    {
+      "title": "Are you anxious or worried?",
+      "text": "Why it is essential to know what state you are in",
+      "date": "November 06, 2020",
+      "hrefLink": "/blog/posts/are-you-anxious-or-worried",
+      "opensInNewTab": false
+    },
+    {
+      "title": "Content title 3",
+      "text": "Content text 3",
+      "date": "May 16, 2024",
+      "hrefLink": "/web-stories/test",
+      "opensInNewTab": true
+    }
+  ]
 }
-  

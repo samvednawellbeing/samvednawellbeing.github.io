@@ -1,6 +1,11 @@
 {
-  "seoTitle": "बारे में seo शीर्षक",
-  "seoDescription": "बारे में seo पाठ",
+  "seo": {
+    "title": "बारे में",
+    "description": "परिवर्तन और उपचार: समग्र मानसिक स्वास्थ्य चिकित्सा के माध्यम से अपनी यात्रा को अपनाएं।",
+    "slug": "about",
+    "image": "/images/favicon.png",
+    "isWebStory": false
+  },
   "contentTitle1": "बारे में सामग्री शीर्षक",
   "contentText1": "बारे में सामग्री पाठ 1",
   "contentText2": "बारे में सामग्री पाठ 2",

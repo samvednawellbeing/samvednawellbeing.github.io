@@ -27,9 +27,31 @@ const PricingPage = () => {
         </Col>
       </Row>
       <Row>
-        <Col sm>{t("contentText1")}</Col>
-        <Col sm>{t("contentText2")}</Col>
-        <Col sm>{t("contentText3")}</Col>
+        <Col xs={12} sm={12} md={12} lg={12} xl={12} xxl={12}>
+          {t("commonTranslations.siteNavigation.pricing.isEnabled") && (
+            <>
+              <h5>{t("pricingPolicy.text1")}</h5>
+              <ul>
+                <li>{t("pricingPolicy.text2")}</li>
+                <li>{t("pricingPolicy.text3")}</li>
+                <li>{t("pricingPolicy.text4")}</li>
+                <li>{t("pricingPolicy.text5")}</li>
+              </ul>
+              <h5>{t("refundPolicy.text1")}</h5>
+              <ul>
+                <li>{t("refundPolicy.text2")}</li>
+                <li>{t("refundPolicy.text3")}</li>
+                <ul>
+                  <li>{t("refundPolicy.text4")}</li>
+                  <li>{t("refundPolicy.text5")}</li>
+                  <li>{t("refundPolicy.text6")}</li>
+                </ul>
+                <li>{t("refundPolicy.text7")}</li>
+                <li>{t("refundPolicy.text8")}</li>
+              </ul>
+            </>
+          )}
+        </Col>
       </Row>
     </BaseLayout>
   )
@@ -38,26 +60,26 @@ const PricingPage = () => {
 export default PricingPage
 
 export const Head = ({ data }) => {
-  const { languages, originalPath, t, i18n } = useI18next()
+  // const { languages, originalPath, t, i18n } = useI18next()
   // console.log('i18n.resolvedLanguage pricing', i18n.resolvedLanguage)
   // document.documentElement.lang = i18n.resolvedLanguage
   const pageTranslations = JSON.parse(
     data.locales.edges.find(e => e.node.ns === "pricing").node.data
   )
 
-  const location = useGeoLocation();
-  if (location.country === 'CA') {
-    console.log("locationHead", location);
+  const location = useGeoLocation()
+  if (location.country === "CA") {
+    console.log("locationHead", location)
     // navigate('/')
   }
-  
+
   return (
     <Seo
-      title={pageTranslations["seoTitle"]}
-      description={pageTranslations["seoDescription"]}
-      slug="pricing"
-      image="/images/favicon.png"
-      isWebStory={false}
+      title={pageTranslations.seo.title}
+      description={pageTranslations.seo.description}
+      slug={pageTranslations.seo.slug}
+      image={pageTranslations.seo.image}
+      isWebStory={pageTranslations.seo.isWebStory}
     />
   )
 }

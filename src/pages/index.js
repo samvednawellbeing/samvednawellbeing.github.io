@@ -144,7 +144,7 @@ const IndexPage = () => {
 export default IndexPage
 
 export const Head = ({ data }) => {
-  const { languages, originalPath, t, i18n } = useI18next()
+  // const { languages, originalPath, t, i18n } = useI18next()
   // console.log('i18n.resolvedLanguage index', i18n.resolvedLanguage)
   // document.documentElement.lang = i18n.resolvedLanguage
   const pageTranslations = JSON.parse(
@@ -159,11 +159,11 @@ export const Head = ({ data }) => {
 
   return (
     <Seo
-      title={pageTranslations["seoTitle"]}
-      description={pageTranslations["seoDescription"]}
-      slug=""
-      image="/images/favicon.png"
-      isWebStory={false}
+      title={pageTranslations.seo.title}
+      description={pageTranslations.seo.description}
+      slug={pageTranslations.seo.slug}
+      image={pageTranslations.seo.image}
+      isWebStory={pageTranslations.seo.isWebStory}
     />
   )
 }

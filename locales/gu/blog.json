@@ -1,29 +1,33 @@
 {
-    "seoTitle": "બ્લોગ seo શીર્ષક",
-    "seoDescription": "બ્લોગ seo લખાણ",
-    "contentTitle1": "બ્લોગ સામગ્રી શીર્ષક",
-    "contentText1": "બ્લોગ સામગ્રી લખાણ 1",
-    "contentText2": "બ્લોગ સામગ્રી લખાણ 2",
-    "contentText3": "બ્લોગ સામગ્રી લખાણ 3",
-    "posts": [
-        {
-            "title": "સામગ્રી શીર્ષક 1",
-            "text": "સામગ્રી લખાણ 1",
-            "date": "May 18, 2024",
-            "hrefLink": "/posts/test1",
-            "opensInNewTab": false
-        },{
-            "title": "શું તમે ચિંતિત છો કે ચિંતિત છો?",
-            "text": "તમે કઈ સ્થિતિમાં છો તે જાણવું શા માટે જરૂરી છે",
-            "date": "Nov 06, 2020",
-            "hrefLink": "/posts/are-you-anxious-or-worried",
-            "opensInNewTab": false
-        },{
-            "title": "સામગ્રી શીર્ષક 3",
-            "text": "સામગ્રી લખાણ 3",
-            "date": "May 16, 2024",
-            "hrefLink": "/web-stories/test",
-            "opensInNewTab": true
-        }
-    ]
+  "seo": {
+    "title": "બ્લોગ",
+    "description": "ટ્રાન્સફોર્મ અને હીલ: સર્વગ્રાહી માનસિક સ્વાસ્થ્ય ઉપચાર દ્વારા તમારી મુસાફરીને સ્વીકારો.",
+    "slug": "blog",
+    "image": "/images/favicon.png",
+    "isWebStory": false
+  },
+  "contentTitle1": "બ્લોગ",
+  "posts": [
+    {
+      "title": "જગ્યા બનાવવી",
+      "text": "જગ્યા બનાવવાથી તમને તમારી ચિંતાઓથી અલગ થવામાં મદદ મળે છે",
+      "date": "નવેમ્બર ૦૬, ૨૦૨૦",
+      "hrefLink": "/blog/posts/making-space",
+      "opensInNewTab": false
+    },
+    {
+      "title": "શું તમે ચિંતિત છો કે ચિંતિત છો?",
+      "text": "તમે કઈ સ્થિતિમાં છો તે જાણવું શા માટે જરૂરી છે",
+      "date": "નવેમ્બર ૦૬, ૨૦૨૦",
+      "hrefLink": "/blog/posts/are-you-anxious-or-worried",
+      "opensInNewTab": false
+    },
+    {
+      "title": "સામગ્રી શીર્ષક 3",
+      "text": "સામગ્રી લખાણ 3",
+      "date": "May 16, 2024",
+      "hrefLink": "/web-stories/test",
+      "opensInNewTab": true
+    }
+  ]
 }

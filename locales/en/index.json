@@ -1,6 +1,11 @@
 {
-  "seoTitle": "",
-  "seoDescription": "Transform & Heal: Embrace your journey through holistic mental health therapy.",
+  "seo": {
+    "title": "",
+    "description": "Transform & Heal: Embrace your journey through holistic mental health therapy.",
+    "slug": "",
+    "image": "/images/favicon.png",
+    "isWebStory": false
+  },
   "contentTitle1": "samvedna wellbeing",
   "contentSubTitle1": "Transform & Heal: Embrace your journey through holistic mental health therapy.",
   "contentBrand": {

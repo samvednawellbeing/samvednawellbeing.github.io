@@ -1,11 +1,11 @@
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 // import { graphql, navigate } from "gatsby"
-import BaseLayout from "../components/baseLayout"
-import Seo from "../components/seo"
+import BaseLayout from "../../components/baseLayout"
+import Seo from "../../components/seo"
 import useGeoLocation from "react-ipgeolocation"
 
-import "../scss/gatsby-imsheth-seed.scss"
+import "../../scss/gatsby-imsheth-seed.scss"
 
 import { Link, useI18next } from "gatsby-plugin-react-i18next"
 import { Trans } from "gatsby-plugin-react-i18next"
@@ -71,7 +71,7 @@ const BlogPage = ({ data }) => {
 export default BlogPage
 
 export const Head = ({ data }) => {
-  const { languages, originalPath, t, i18n } = useI18next()
+  // const { languages, originalPath, t, i18n } = useI18next()
   // console.log('i18n.resolvedLanguage blog', i18n.resolvedLanguage)
   // document.documentElement.lang = i18n.resolvedLanguage
   const pageTranslations = JSON.parse(
@@ -86,11 +86,11 @@ export const Head = ({ data }) => {
 
   return (
     <Seo
-      title={pageTranslations["seoTitle"]}
-      description={pageTranslations["seoDescription"]}
-      slug="blog"
-      image="/images/favicon.png"
-      isWebStory={false}
+      title={pageTranslations.seo.title}
+      description={pageTranslations.seo.description}
+      slug={pageTranslations.seo.slug}
+      image={pageTranslations.seo.image}
+      isWebStory={pageTranslations.seo.isWebStory}
     />
   )
 }

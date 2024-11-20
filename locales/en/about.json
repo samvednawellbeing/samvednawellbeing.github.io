@@ -1,6 +1,11 @@
 {
-  "seoTitle": "About seo title",
-  "seoDescription": "About seo text",
+  "seo": {
+    "title": "About",
+    "description": "Transform & Heal: Embrace your journey through holistic mental health therapy.",
+    "slug": "about",
+    "image": "/images/favicon.png",
+    "isWebStory": false
+  },
   "contentTitle1": "About content title 1",
   "contentText1": "About content text 1",
   "contentText2": "About content text 2",
