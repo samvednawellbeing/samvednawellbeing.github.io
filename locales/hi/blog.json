@@ -9,6 +9,13 @@
   "contentTitle1": "ब्लॉग",
   "posts": [
     {
+      "title": "संवेदना परिवर्तन",
+      "text": "संवेदना परिवर्तन",
+      "date": "मई २३, २०२४",
+      "hrefLink": "/web-stories/samvedna-transformation",
+      "opensInNewTab": true
+    },
+    {
       "title": "जगह बनाना",
       "text": "जगह बनाने से आपको अपनी चिंताओं से अलग होने में मदद मिलती है",
       "date": "नवंबर ०६, २०२०",
@@ -21,13 +28,6 @@
       "date": "नवंबर ०६, २०२०",
       "hrefLink": "/blog/posts/are-you-anxious-or-worried",
       "opensInNewTab": false
-    },
-    {
-      "title": "सामग्री शीर्षक 3",
-      "text": "सामग्री पाठ 3",
-      "date": "May 16, 2024",
-      "hrefLink": "/web-stories/test",
-      "opensInNewTab": true
     }
   ]
 }

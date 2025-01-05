@@ -9,6 +9,13 @@
   "contentTitle1": "Blog",
   "posts": [
     {
+      "title": "Samvedna Transformation",
+      "text": "Samvedna Transformation",
+      "date": "May 23, 2024",
+      "hrefLink": "/web-stories/samvedna-transformation",
+      "opensInNewTab": true
+    },
+    {
       "title": "Making Space",
       "text": "Making space helps you detach from your worries",
       "date": "November 06, 2020",
@@ -21,13 +28,6 @@
       "date": "November 06, 2020",
       "hrefLink": "/blog/posts/are-you-anxious-or-worried",
       "opensInNewTab": false
-    },
-    {
-      "title": "Content title 3",
-      "text": "Content text 3",
-      "date": "May 16, 2024",
-      "hrefLink": "/web-stories/test",
-      "opensInNewTab": true
     }
   ]
 }

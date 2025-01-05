@@ -9,6 +9,13 @@
   "contentTitle1": "બ્લોગ",
   "posts": [
     {
+      "title": "સંવેદના પરિવર્તન",
+      "text": "સંવેદના પરિવર્તન",
+      "date": "મે ૨૩, ૨૦૨૪",
+      "hrefLink": "/web-stories/samvedna-transformation",
+      "opensInNewTab": true
+    },
+    {
       "title": "જગ્યા બનાવવી",
       "text": "જગ્યા બનાવવાથી તમને તમારી ચિંતાઓથી અલગ થવામાં મદદ મળે છે",
       "date": "નવેમ્બર ૦૬, ૨૦૨૦",
@@ -21,13 +28,6 @@
       "date": "નવેમ્બર ૦૬, ૨૦૨૦",
       "hrefLink": "/blog/posts/are-you-anxious-or-worried",
       "opensInNewTab": false
-    },
-    {
-      "title": "સામગ્રી શીર્ષક 3",
-      "text": "સામગ્રી લખાણ 3",
-      "date": "May 16, 2024",
-      "hrefLink": "/web-stories/test",
-      "opensInNewTab": true
     }
   ]
 }

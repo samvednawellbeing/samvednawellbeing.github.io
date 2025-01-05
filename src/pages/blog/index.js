@@ -33,34 +33,61 @@ const BlogPage = ({ data }) => {
             <Trans i18nKey="contentTitle1"></Trans>
           </h1>
 
-          <h2></h2>
+          <h2>df</h2>
         </Col>
       </Row>
       <Row>
         {postsTranslated.map((post, index) => (
           <Col key={index} xs={6} sm={6} md={4} lg={4} xl={3} xxl={3}>
-            <Link
-              // target="_blank"
-              // language="en"
-              // to={urljoin(data.site.siteMetadata.siteUrl, post.hrefLink)}
-              to={post.hrefLink}
-              key={index}
-              style={{ textDecoration: "none" }}
-            >
-              <Card
+            {post.opensInNewTab ? (
+              <Link
+                // target="_blank"
+                // language="en"
+                // to={urljoin(
+                //   window.location.href.split(
+                //     window.location.pathname.slice(1)
+                //   )[0],
+                //   post.hrefLink
+                // )}
+                to={post.hrefLink}
                 key={index}
-                style={{ width: "18rem", marginBottom: "2rem" }}
+                style={{ textDecoration: "none" }}
               >
-                <Card.Img variant="top" src="/images/mt.jpg" />
-                <Card.Body>
-                  <Card.Title>{post.title}</Card.Title>
-                  <Card.Text>{post.text}</Card.Text>
-                  <Card.Subtitle>
-                    <i>{post.date}</i>
-                  </Card.Subtitle>
-                </Card.Body>
-              </Card>
-            </Link>
+                <Card
+                  key={index}
+                  style={{ width: "18rem", marginBottom: "2rem" }}
+                >
+                  <Card.Img variant="top" src="/images/mt.jpg" />
+                  <Card.Body>
+                    <Card.Title>{post.title}</Card.Title>
+                    <Card.Text>{post.text}</Card.Text>
+                    <Card.Subtitle>
+                      <i>{post.date}</i>
+                    </Card.Subtitle>
+                  </Card.Body>
+                </Card>
+              </Link>
+            ) : (
+              <Link
+                to={post.hrefLink}
+                key={index}
+                style={{ textDecoration: "none" }}
+              >
+                <Card
+                  key={index}
+                  style={{ width: "18rem", marginBottom: "2rem" }}
+                >
+                  <Card.Img variant="top" src="/images/mt.jpg" />
+                  <Card.Body>
+                    <Card.Title>{post.title}</Card.Title>
+                    <Card.Text>{post.text}</Card.Text>
+                    <Card.Subtitle>
+                      <i>{post.date}</i>
+                    </Card.Subtitle>
+                  </Card.Body>
+                </Card>
+              </Link>
+            )}
           </Col>
         ))}
       </Row>
