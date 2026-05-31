@@ -27,7 +27,7 @@
       "ctaButton": {
         "openNewTab": true,
         "label": "Book Session",
-        "url": "https://calendly.com/samvednawellbeing"
+        "url": "https://samvednawellbeing.neetocal.com/"
       },
       "footer": [
         { "label": "Privacy", "url": "/privacy" },
